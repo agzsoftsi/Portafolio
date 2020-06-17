@@ -33,6 +33,7 @@ body {
 	line-height: 1;
 }
 
+
 ol, ul {
 	list-style: none;
 }
@@ -1630,6 +1631,8 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			border-radius: 100%;
+			border: solid rgb(156, 156, 156) 5px;
 		}
 
 		.image.fit {
@@ -1991,11 +1994,13 @@ input, select, textarea {
 		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		padding: 8em 0 8em 0;
 		text-align: center;
+		
 	}
 
 		.wrapper.style1 {
 			background-image: none;
-			background-color: #fff;
+			background-color: #000;
+			color: white;
 		}
 
 		.wrapper.style2 {
@@ -2036,7 +2041,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		background-color: #282828;
+		background-color: black;
 		text-align: center;
 		position: fixed;
 		left: 0;
@@ -2046,6 +2051,8 @@ input, select, textarea {
 		cursor: default;
 		height: 3.5em;
 		line-height: 3.5em;
+		border-bottom: #3e3e3e solid 2px;
+
 	}
 
 		#nav ul {
