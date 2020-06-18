@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-
+.imagen:hover {filter: grayscale(80%);}
 
 ol, ul {
 	list-style: none;
@@ -125,7 +125,7 @@ input, select, textarea {
 
 	b, strong {
 		font-weight: 600;
-		color: #3e3e3e;
+		color: #0a98cf;
 	}
 
 	i, em {
@@ -151,7 +151,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #3e3e3e;
+		color: #5a5a5a;
 		margin: 0 0 0.75em 0;
 	}
 
@@ -1632,7 +1632,7 @@ input, select, textarea {
 			display: block;
 			width: 100%;
 			border-radius: 100%;
-			border: solid rgb(156, 156, 156) 5px;
+			border: solid #0a98cf 5px;
 		}
 
 		.image.fit {
@@ -1700,7 +1700,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #43bff0;
+			background-color: #0a98cf;
 			color: #fff !important;
 		}
 
@@ -1709,7 +1709,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #3BA8D3;
+			background-color: #056e97;
 			top: 1px;
 		}
 
@@ -2051,7 +2051,7 @@ input, select, textarea {
 		cursor: default;
 		height: 3.5em;
 		line-height: 3.5em;
-		border-bottom: #3e3e3e solid 2px;
+		border-bottom: #056e97 solid 2px;
 
 	}
 
