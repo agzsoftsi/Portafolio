@@ -1631,6 +1631,7 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			
 			border-radius: 100%;
 			border: solid #0a98cf 5px;
 		}
@@ -1638,6 +1639,7 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			width: 100%;
+			
 		}
 
 		.image.featured {
