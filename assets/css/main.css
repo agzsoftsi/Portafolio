@@ -1630,14 +1630,16 @@ input, select, textarea {
 
 		.image img {
 			display: block;
+			
 			width: 100%;
 			
-			border-radius: 100%;
-			border: solid #0a98cf 5px;
+			/*border-radius: 100%;
+			border: solid #0a98cf 5px;*/
 		}
 
 		.image.fit {
 			display: block;
+			
 			width: 100%;
 			
 		}
@@ -1660,7 +1662,22 @@ input, select, textarea {
 
 			.image.centered img {
 				margin: 0 auto;
-				width: auto;
+				
+				max-width: 300px;
+			}
+
+			.pictureE {
+		
+				transform: scale(1,1);
+				transition-timing-function: ease-in-out;
+				transition-duration: 100ms;
+			}
+		
+			.pictureE:hover {
+				
+				transform: scale(1.05,1.05);
+				transition-timing-function: ease-in-out;
+				transition-duration: 100ms;
 			}
 
 /* Button */
