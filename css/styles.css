@@ -13,8 +13,8 @@
 
 body{
     background-color: #0F2027;  /* fallback for old browsers */
-background-color: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background-color: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background-color: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .navbar{
@@ -29,9 +29,9 @@ background-color: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, 
     background-position: right bottom;
     background-blend-mode:luminosity;
     background-color: #0F2027;  /* fallback for old browsers */
-background-color: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background-color: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-color: whitesmoke;
+    background-color: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background-color: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: whitesmoke;
 }
 
 .jumbotron .text-intro{
@@ -102,4 +102,74 @@ color: whitesmoke;
 .contact-section-class{
     background: rgb(2, 2, 24);
     height: 500px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .jumbotron .text-intro .mycode{
+        font-size: 15px;
+            }
+
+    .title{
+        font-size: 65px;
+            }
+    .title3{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .jumbotron .text-intro .mycode{
+        font-size: 12px;
+            }
+
+    .title{
+        font-size: 45px;
+            }
+    .title2{
+        font-size: 25px;
+    }
+    .title3{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .title{
+     /*   background-color: rgba(255, 228, 108, 0.8) ;*/
+        
+            }
+    .title2{
+       /* background-color: rgba(255, 228, 108, 0.8) ;*/
+
+    }
+
+    .jumbotron .text-intro .mycode{
+        display: none;
+            }
+
+    .title4{
+        font-size: 25px;
+        /*background-color: rgba(255, 255, 255, 0.8) ;*/
+        
+    }
+
+    .title3{
+        font-size: 15px;
+    }
+
+    .jumbotron{
+        background-image: url('../media/bgpic.png') !important;
+        
+       padding-top: 50%;
+        background-position:top center;
+        align-items: center;
+        text-align: center;
+       height: 780px;
+       
+    }
+
+ 
 }
