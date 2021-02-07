@@ -1,5 +1,19 @@
 *{
     margin: 0;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    background: #0f2027ce !important;
+    border-bottom: 1px solid rgb(0, 183, 255);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+hr{
+   /* background: rgb(0, 183, 255, 0.3) !important;*/
+   display: none;
 }
 
 .navbar a{
@@ -8,7 +22,15 @@
 
 .navbar a:hover{
     color: rgb(0, 183, 255) !important;
-    border-bottom: 2px solid rgb(0, 183, 255) !important;
+   /* border-bottom: 2px solid rgb(0, 183, 255) !important;*/
+}
+
+.navbar .toggle-b{
+    color: rgb(0, 183, 255) !important;
+}
+
+.navbar .toggle-b:hover{
+    color: rgb(255, 255, 255) !important;
 }
 
 body{
@@ -17,11 +39,7 @@ body{
     background-color: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.navbar{
-    background: transparent !important;
-    border: 1px solid #2C5364;
-    
-}
+
 
 .jumbotron{
     background-image: url('../media/bgpic.png') !important;
@@ -32,6 +50,7 @@ body{
     background-color: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
     background-color: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: whitesmoke;
+    height: 870px;
 }
 
 .jumbotron .text-intro{
@@ -45,7 +64,8 @@ body{
     padding: 10px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px black;
-    
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .jumbotron .text-intro .mycode:hover{
     font-family:'Courier New', Courier, monospace;
@@ -70,7 +90,7 @@ body{
     color: whitesmoke;
 }
 .jumbotron .text-intro i:hover{
-    color: rgb(47, 103, 255);
+    color: rgb(0, 183, 255) !important;
     transform: scale(1.1);
 }
 
@@ -104,6 +124,10 @@ body{
     height: 500px;
 }
 
+.title, .title4{
+    color: rgb(0, 183, 255) !important;
+        }
+
 @media screen and (max-width: 1200px) {
 
     .jumbotron .text-intro .mycode{
@@ -129,6 +153,7 @@ body{
             }
     .title2{
         font-size: 25px;
+        
     }
     .title3{
         font-size: 12px;
