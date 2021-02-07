@@ -37,6 +37,7 @@ body{
     background-color: #0F2027;  /* fallback for old browsers */
     background-color: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
     background-color: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
 }
 
 
@@ -197,4 +198,224 @@ body{
     }
 
  
+}
+
+
+
+/* CARD SECTION */
+/*.card {
+    width: 400px;
+    height: 252px;
+    background-color: #fff;
+    background: linear-gradient(#f8f8f8, #fff);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5rem;
+    
+  }
+  
+  .card h1{
+    text-align: center;
+  }
+  
+  .card .additional {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(rgb(2, 2, 24),rgb(2, 2, 24));
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .card:hover .additional {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  .card .additional .user-card {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
+  }
+  
+
+  .card .additional .more-info {
+    width: 250px;
+    float: left;
+    position: absolute;
+    left: 120px;
+    height: 100%;
+  }
+  
+  .card .additional .more-info h1 {
+    color: #fff;
+    
+  }
+  
+  .card.green .additional .more-info h1 {
+    color: #224C36;
+  }
+  
+  .card .additional .coords {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .card.green .additional .coords {
+    color: #325C46;
+  }
+  
+  .card .additional .coords span + span {
+    float: right;
+  }
+  
+  .card .additional .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+  }
+  
+  .card.green .additional .stats {
+    color: #325C46;
+  }
+  
+  .card .additional .stats > div {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .card .additional .stats i {
+    display: block;
+  }
+  
+  .card .additional .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .card .additional .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+  }
+  
+  .card .additional .stats div.value.infinity {
+    font-size: 2.5rem;
+  }
+  
+  .card .general {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+  }
+  
+  .card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+  }*/
+
+
+
+.card-s{
+    position: relative;
+    max-width: 380px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671);
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    font-family: 'Raleway', sans-serif;
+    
+}
+.card-s:hover{
+    height: 480px;
+}
+
+.card-s .imgbx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -40px;
+    left: 50px;
+    z-index: 1;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671);
+}
+
+.card-s .imgbx img{
+    max-width: 100%;
+    border-radius: 5px;
+    
+}
+
+.card-s .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.card-s .content h2{
+    color: rgb(0, 183, 255);
+}
+
+
+.card-s:hover .content{
+
+    visibility: visible;
+    opacity: 1;
+    margin-top: -45px;
+}
+
+.card-s:hover .content .tech i{
+   font-size: 24px;
+}
+
+.card-s:hover .content .tech{
+    border: solid 1px rgb(177, 177, 177);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+
+.card-s:hover .content .source i:hover{
+    color: rgb(0, 183, 255) !important;
+    transform: scale(1.1);
+}
+
+.card-s:hover .content .source i{
+    font-size: 24px;
+    align-items: center;
+    border-radius: 100%;
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(20, 20, 20);
 }
