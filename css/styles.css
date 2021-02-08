@@ -61,18 +61,14 @@ body{
 }
 .jumbotron .text-intro .mycode{
     font-family:'Courier New', Courier, monospace;
-    background: rgba(200, 200, 200, 0.226);
+    background: rgba(2, 2, 24, 0.7);
     padding: 10px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px black;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.jumbotron .text-intro .mycode:hover{
-    font-family:'Courier New', Courier, monospace;
-    background: rgba(200, 200, 200, 0.719);    
-    
-}
+
 
 .jumbotron .text-intro .mycode .data-p:hover{
     color: rgb(36, 97, 0);
@@ -165,11 +161,25 @@ body{
 
     .title{
      /*   background-color: rgba(255, 228, 108, 0.8) ;*/
-        
+        margin-left: 0 !important;
             }
     .title2{
        /* background-color: rgba(255, 228, 108, 0.8) ;*/
+       margin-left: 0 !important;
+       padding-left: 0;
+    }
 
+    .jumbotron{
+        align-content: center !important;
+        justify-content: center;
+    }
+    .jumbotron .container{
+       margin-left: 0px !important; 
+       margin-right: 0px !important; 
+       background: rgba(2, 2, 24, 0.8);
+       border-radius: 10px;
+       padding: 5px;
+       
     }
 
     .jumbotron .text-intro .mycode{
@@ -177,6 +187,7 @@ body{
             }
 
     .title4{
+        margin-top: 30px ;
         font-size: 25px;
         /*background-color: rgba(255, 255, 255, 0.8) ;*/
         
@@ -331,7 +342,7 @@ body{
     bottom: 1rem;
     right: 1rem;
     font-size: 0.9em;
-  }*/
+  }
 
 
 
@@ -418,4 +429,6 @@ body{
     text-align: center;
     text-decoration: none;
     color: rgb(20, 20, 20);
-}
+}*/
+
+
