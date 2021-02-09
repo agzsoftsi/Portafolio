@@ -3,6 +3,8 @@
     scroll-behavior: smooth;
 }
 
+
+/* Nav styles */
 .navbar{
     background: #0f2027ce !important;
     border-bottom: 1px solid rgb(0, 183, 255);
@@ -22,6 +24,8 @@ hr{
 
 .navbar a:hover{
     color: rgb(0, 183, 255) !important;
+    background: rgba(2, 2, 24, 0.1) !important;
+    transition: 0.2s ease-in-out;
    /* border-bottom: 2px solid rgb(0, 183, 255) !important;*/
 }
 
@@ -31,6 +35,7 @@ hr{
 
 .navbar .toggle-b:hover{
     color: rgb(255, 255, 255) !important;
+    transition: 0.2s ease-in-out;
 }
 
 body{
@@ -40,12 +45,12 @@ body{
    
 }
 
-
+/* Intro Styles */
 
 .jumbotron{
     background-image: url('../media/bgpic.png') !important;
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: bottom center;
     background-blend-mode:luminosity;
     background-color: #0F2027;  /* fallback for old browsers */
     background-color: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
@@ -55,27 +60,23 @@ body{
     
 }
 
+.jumbotron .container{
+    margin-top: 350px;
+    margin-left: 0px !important; 
+    margin-right: 0px !important; 
+    background: rgba(2, 2, 24, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 700px;
+    height: 420px;
+    
+ }
+
 .jumbotron .text-intro{
     align-items: center;
     font-family: 'Raleway', sans-serif;
    /* font-family: 'Roboto Slab', serif;*/
 }
-.jumbotron .text-intro .mycode{
-    font-family:'Courier New', Courier, monospace;
-    background: rgba(2, 2, 24, 0.7);
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px black;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-
-.jumbotron .text-intro .mycode .data-p:hover{
-    color: rgb(36, 97, 0);
-}
-
-
 
 .jumbotron .text-intro i{
     align-items: center;
@@ -92,26 +93,28 @@ body{
     transform: scale(1.1);
 }
 
-.jumbotron .text-intro .text-p{
-    color: rgb(255, 196, 0);
-    font-weight: bolder;
-}
-
-
-
 .jumbotron .text-intro .bg-social i{
     font-size: 30px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.383);
 }
 
+.jumbotron .text-intro .title4{
+    margin-top: 50px;
+}
 
 
+
+
+
+
+/* About Styles */
 .about-section-class{
     background: rgb(2, 2, 24);
     height: 500px;
 }
 
 
+/* project Styles */
 .project-section-class{
     background: rgba(#0F2027, 0.226);
     height: 500px;
@@ -126,120 +129,59 @@ body{
     color: rgb(0, 183, 255) !important;
         }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 750px) {
 
-    .jumbotron .text-intro .mycode{
-        font-size: 15px;
-            }
+    .jumbotron .container{
+        max-width: 700px;
+        height: 380px;
+        margin-top: 390px;
+     }
 
-    .title{
-        font-size: 65px;
-            }
-    .title3{
-        font-size: 14px;
+    .jumbotron .text-intro .title{
+        font-size: 48px;
     }
+
+    .jumbotron .text-intro .title2 {
+        font-size: 25px;
+    }
+    
+    .jumbotron .text-intro .title4{
+        font-size: 20px;
+    }
+
+    .jumbotron .text-intro .title3{
+        font-size: 15px;
+        
+    }
+    
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 578px) {
 
-    .title{
-        /*   background-color: rgba(255, 228, 108, 0.8) ;*/
-           margin-left: 0 !important;
-               }
-       .title2{
-          /* background-color: rgba(255, 228, 108, 0.8) ;*/
-          margin-left: 0 !important;
-          padding-left: 0;
-       }
-   
-       .jumbotron{
-           align-content: center !important;
-           justify-content: center;
-           height: 870px;
-           padding-top: 50%;
-           background-position:bottom center;
-           align-items: center;
-           text-align: center;
-       }
-       .jumbotron .container{
-          margin-left: 0px !important; 
-          margin-right: 0px !important; 
-          background: rgba(2, 2, 24, 0.8);
-          
-          border-radius: 10px;
-          padding: 10px;
-          
-       }
-   
-       .jumbotron .text-intro .mycode{
-           display: none;
-               }
-   
-       .title4, .section-title{
-           margin-top: 30px ;
-           font-size: 25px;
-           /*background-color: rgba(255, 255, 255, 0.8) ;*/
-           
-       }
-   
-       .title3{
-           font-size: 15px;
-           padding-left: 5px;
-           padding-right: 5px;
-       }
+    .jumbotron .container{
+        margin-top: 420px;
+        max-width: 550px;
+        height: 380px;
+        padding-left: 10px;
+        padding-right: 10px;
+     }
 
+    .jumbotron .text-intro .title{
+        font-size: 40px;
+    }
+
+    .jumbotron .text-intro .title2 {
+        font-size: 20px;
+    }
+    
+    .jumbotron .text-intro .title4{
+        font-size: 15px;
+    }
+
+    .jumbotron .text-intro .title3{
+        font-size: 12px;
+        
+    }
+    
 }
-
-@media screen and (max-width: 600px) {
-
-    .title{
-        /*   background-color: rgba(255, 228, 108, 0.8) ;*/
-           margin-left: 0 !important;
-           font-size: 35px !important;
-               }
-       .title2{
-          /* background-color: rgba(255, 228, 108, 0.8) ;*/
-          margin-left: 0 !important;
-          padding-left: 0;
-          font-size: 20px !important;
-       }
-   
-       .jumbotron{
-           align-content: center !important;
-           justify-content: center;
-           height: 870px;
-           padding-top: 80%;
-           background-position:bottom center;
-           align-items: center;
-           text-align: center;
-       }
-       .jumbotron .container{
-          margin-left: 5px !important; 
-          margin-right: 5px !important; 
-          background: rgba(2, 2, 24, 0.8);
-          border-radius: 10px;
-          padding: 10px;
-          
-       }
-   
-       .jumbotron .text-intro .mycode{
-           display: none;
-               }
-   
-       .title4, .section-title{
-           margin-top: 30px ;
-           font-size: 20px;
-           
-           /*background-color: rgba(255, 255, 255, 0.8) ;*/
-           
-       }
-   
-       .title3{
-           font-size: 12px;
-           padding-left: 10px;
-           padding-right: 10px;
-       }
-
-}
-
 
