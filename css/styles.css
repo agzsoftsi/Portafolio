@@ -52,6 +52,7 @@ body{
     background-color: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: whitesmoke;
     height: 870px;
+    
 }
 
 .jumbotron .text-intro{
@@ -141,294 +142,104 @@ body{
 
 @media screen and (max-width: 1000px) {
 
-    .jumbotron .text-intro .mycode{
-        font-size: 12px;
-            }
+    .title{
+        /*   background-color: rgba(255, 228, 108, 0.8) ;*/
+           margin-left: 0 !important;
+               }
+       .title2{
+          /* background-color: rgba(255, 228, 108, 0.8) ;*/
+          margin-left: 0 !important;
+          padding-left: 0;
+       }
+   
+       .jumbotron{
+           align-content: center !important;
+           justify-content: center;
+           height: 870px;
+           padding-top: 50%;
+           background-position:bottom center;
+           align-items: center;
+           text-align: center;
+       }
+       .jumbotron .container{
+          margin-left: 0px !important; 
+          margin-right: 0px !important; 
+          background: rgba(2, 2, 24, 0.8);
+          
+          border-radius: 10px;
+          padding: 10px;
+          
+       }
+   
+       .jumbotron .text-intro .mycode{
+           display: none;
+               }
+   
+       .title4, .section-title{
+           margin-top: 30px ;
+           font-size: 25px;
+           /*background-color: rgba(255, 255, 255, 0.8) ;*/
+           
+       }
+   
+       .title3{
+           font-size: 15px;
+           padding-left: 5px;
+           padding-right: 5px;
+       }
+
+}
+
+@media screen and (max-width: 600px) {
 
     .title{
-        font-size: 45px;
-            }
-    .title2{
-        font-size: 25px;
-        
-    }
-    .title3{
-        font-size: 12px;
-    }
+        /*   background-color: rgba(255, 228, 108, 0.8) ;*/
+           margin-left: 0 !important;
+           font-size: 35px !important;
+               }
+       .title2{
+          /* background-color: rgba(255, 228, 108, 0.8) ;*/
+          margin-left: 0 !important;
+          padding-left: 0;
+          font-size: 20px !important;
+       }
+   
+       .jumbotron{
+           align-content: center !important;
+           justify-content: center;
+           height: 870px;
+           padding-top: 80%;
+           background-position:bottom center;
+           align-items: center;
+           text-align: center;
+       }
+       .jumbotron .container{
+          margin-left: 5px !important; 
+          margin-right: 5px !important; 
+          background: rgba(2, 2, 24, 0.8);
+          border-radius: 10px;
+          padding: 10px;
+          
+       }
+   
+       .jumbotron .text-intro .mycode{
+           display: none;
+               }
+   
+       .title4, .section-title{
+           margin-top: 30px ;
+           font-size: 20px;
+           
+           /*background-color: rgba(255, 255, 255, 0.8) ;*/
+           
+       }
+   
+       .title3{
+           font-size: 12px;
+           padding-left: 10px;
+           padding-right: 10px;
+       }
+
 }
-
-@media screen and (max-width: 768px) {
-
-    .title{
-     /*   background-color: rgba(255, 228, 108, 0.8) ;*/
-        margin-left: 0 !important;
-            }
-    .title2{
-       /* background-color: rgba(255, 228, 108, 0.8) ;*/
-       margin-left: 0 !important;
-       padding-left: 0;
-    }
-
-    .jumbotron{
-        align-content: center !important;
-        justify-content: center;
-    }
-    .jumbotron .container{
-       margin-left: 0px !important; 
-       margin-right: 0px !important; 
-       background: rgba(2, 2, 24, 0.8);
-       border-radius: 10px;
-       padding: 5px;
-       
-    }
-
-    .jumbotron .text-intro .mycode{
-        display: none;
-            }
-
-    .title4{
-        margin-top: 30px ;
-        font-size: 25px;
-        /*background-color: rgba(255, 255, 255, 0.8) ;*/
-        
-    }
-
-    .title3{
-        font-size: 15px;
-    }
-
-    .jumbotron{
-        background-image: url('../media/bgpic.png') !important;
-        
-       padding-top: 50%;
-        background-position:top center;
-        align-items: center;
-        text-align: center;
-       height: 780px;
-       
-    }
-
- 
-}
-
-
-
-/* CARD SECTION */
-/*.card {
-    width: 400px;
-    height: 252px;
-    background-color: #fff;
-    background: linear-gradient(#f8f8f8, #fff);
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    margin: 1.5rem;
-    
-  }
-  
-  .card h1{
-    text-align: center;
-  }
-  
-  .card .additional {
-    position: absolute;
-    width: 150px;
-    height: 100%;
-    background: linear-gradient(rgb(2, 2, 24),rgb(2, 2, 24));
-    transition: width 0.4s;
-    overflow: hidden;
-    z-index: 2;
-  }
-  
-  .card:hover .additional {
-    width: 100%;
-    border-radius: 0 5px 5px 0;
-  }
-  
-  .card .additional .user-card {
-    width: 150px;
-    height: 100%;
-    position: relative;
-    float: left;
-  }
-  
-
-  .card .additional .more-info {
-    width: 250px;
-    float: left;
-    position: absolute;
-    left: 120px;
-    height: 100%;
-  }
-  
-  .card .additional .more-info h1 {
-    color: #fff;
-    
-  }
-  
-  .card.green .additional .more-info h1 {
-    color: #224C36;
-  }
-  
-  .card .additional .coords {
-    margin: 0 1rem;
-    color: #fff;
-    font-size: 1rem;
-  }
-  
-  .card.green .additional .coords {
-    color: #325C46;
-  }
-  
-  .card .additional .coords span + span {
-    float: right;
-  }
-  
-  .card .additional .stats {
-    font-size: 2rem;
-    display: flex;
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    right: 1rem;
-    top: auto;
-    color: #fff;
-  }
-  
-  .card.green .additional .stats {
-    color: #325C46;
-  }
-  
-  .card .additional .stats > div {
-    flex: 1;
-    text-align: center;
-  }
-  
-  .card .additional .stats i {
-    display: block;
-  }
-  
-  .card .additional .stats div.title {
-    font-size: 0.75rem;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  .card .additional .stats div.value {
-    font-size: 1.5rem;
-    font-weight: bold;
-    line-height: 1.5rem;
-  }
-  
-  .card .additional .stats div.value.infinity {
-    font-size: 2.5rem;
-  }
-  
-  .card .general {
-    width: 300px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    box-sizing: border-box;
-    padding: 1rem;
-    padding-top: 0;
-  }
-  
-  .card .general .more {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    font-size: 0.9em;
-  }
-
-
-
-.card-s{
-    position: relative;
-    max-width: 380px;
-    height: 215px;
-    background: #fff;
-    margin: 30px 10px;
-    padding: 20px 5px 5px 5px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671);
-    border-radius: 5px;
-    transition: 0.3s ease-in-out;
-    font-family: 'Raleway', sans-serif;
-    
-}
-.card-s:hover{
-    height: 480px;
-}
-
-.card-s .imgbx{
-    position: relative;
-    width: 260px;
-    height: 260px;
-    top: -40px;
-    left: 50px;
-    z-index: 1;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671);
-}
-
-.card-s .imgbx img{
-    max-width: 100%;
-    border-radius: 5px;
-    
-}
-
-.card-s .content{
-    position: relative;
-    margin-top: -140px;
-    padding: 10px 15px;
-    text-align: center;
-    color: #111;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-}
-
-.card-s .content h2{
-    color: rgb(0, 183, 255);
-}
-
-
-.card-s:hover .content{
-
-    visibility: visible;
-    opacity: 1;
-    margin-top: -45px;
-}
-
-.card-s:hover .content .tech i{
-   font-size: 24px;
-}
-
-.card-s:hover .content .tech{
-    border: solid 1px rgb(177, 177, 177);
-    border-radius: 5px;
-    padding: 2px;
-}
-
-
-.card-s:hover .content .source i:hover{
-    color: rgb(0, 183, 255) !important;
-    transform: scale(1.1);
-}
-
-.card-s:hover .content .source i{
-    font-size: 24px;
-    align-items: center;
-    border-radius: 100%;
-    padding: 5px;
-    margin: 2px;
-    text-align: center;
-    text-decoration: none;
-    color: rgb(20, 20, 20);
-}*/
 
 
