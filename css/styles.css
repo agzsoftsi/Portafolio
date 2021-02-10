@@ -1,16 +1,67 @@
-/* variables */
-:root {
-    --card-width:  350px;
-    --card-height: 500px;
-    --h-color:     #9CC9E3;
-    --yellow:      #D0BB57;
-    --txt-color:   #DCE3E7;
-  }
-
-
 *{
     margin: 0;
     scroll-behavior: smooth;
+}
+
+
+/* Loader Styles */
+#loader-container{
+    background-color: rgba(44, 42, 43, 0.9);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transition: all 1.4s linear;
+    z-index: 10000;
+    
+}
+
+#loader1{
+    position: absolute;
+    top: 0;
+    left:0 ;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border: solid 4px transparent;
+    border-top-color: whitesmoke;
+    border-left-color: whitesmoke;
+    border-radius: 50%;
+    margin: auto;
+    animation: loader1 1.4s linear infinite;
+}
+
+#loader2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    height: 70px;
+    border: solid 4px transparent;
+    border-top-color: rgb(0, 183, 255);
+    border-left-color: rgb(0, 183, 255);
+    border-radius: 50%;
+    margin: auto;
+    animation: loader2 1.4s linear infinite;
+}
+
+@keyframes loader1{
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes loader2{
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
 }
 
 
@@ -49,9 +100,9 @@ hr{
 }
 
 .body-v1{
-    background-color: #0F2027;  /* fallback for old browsers */
-    background-color: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background-color: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
