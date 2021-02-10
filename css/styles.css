@@ -151,7 +151,10 @@ hr{
         padding: 1px;
         width: 400px !important;
         height: 400px !important;
-        margin: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
     /*    background-image: url(../media/logos/TaskList.png) !important;
         background-repeat: no-repeat !important;
         background-position: center bottom;*/
@@ -167,6 +170,13 @@ hr{
     .project-section-class .card-project .info-card{
         
         color: rgb(198, 206, 206);
+        
+
+    }
+
+    .project-section-class .card-project .media-card img{
+        
+      border-radius: 10px;
         
 
     }
