@@ -3,6 +3,13 @@
     scroll-behavior: smooth;
 }
 
+body{
+    background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 
 /* Loader Styles */
 #loader-container{
@@ -74,6 +81,7 @@
     text-align: center;
 }
 
+
 hr{
    /* background: rgb(0, 183, 255, 0.3) !important;*/
    display: none;
@@ -99,32 +107,21 @@ hr{
     transition: 0.2s ease-in-out;
 }
 
-.body-v1{
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
 
 
-.body-v2{
-    background-color: #0F2027;  /* fallback for old browsers */
-    background-color: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background-color: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+
+
 
 /* Intro Styles */
 
 .jumbotron{
-    background-image: url('../media/bgpic.png') !important;
+    background-image: url('../media/Obgpic4.png') !important;
     background-repeat: no-repeat;
     background-position: bottom center;
-   background-blend-mode:luminosity;
-    background-color: #0F2027;  /* fallback for old browsers */
-    background-color: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background-color: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-blend-mode:luminosity;
     color: whitesmoke;
     height: 870px;
-       
+    background-color: #0F2027;   
 }
 
 
@@ -172,7 +169,11 @@ hr{
 }
 
 
-
+/*Div bar styles*/
+.divbar{
+    background-image: url(../media/divbar.png);
+    height: 5px;
+}
 
 
 
