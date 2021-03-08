@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ICON SECTION -->
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./media/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./media/favicon-16x16.png">
+    <link rel="manifest" href="./media/site.webmanifest">
+    <link rel="mask-icon" href="./media/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+      <!-- Fonts TAGS SECTION -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <!-- PRIMARY TAGS SECTION -->
+    <meta property="card" content="summary_large_image">
+    <meta property="url" content="https://agzsoftsi.github.io/Portafolio/">
+    <meta name="title" content="Portafolio">
+    <meta name="description" content="Personal Web Portafolio - Know my projets, My experience like a Web Developer">
+    <meta property="image" content="https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/000_Project1_Task_list/media/Logomedia.fw.png">
+
+    <!-- PRIMARY TAGS TWITTER SECTION -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://agzsoftsi.github.io/Portafolio/">
+    <meta property="twitter:title" content="Portafolio">
+    <meta property="twitter:description" content="Personal Web Portafolio - Know my projets, My experience like a Web Developer">
+    <meta property="twitter:image" content="https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/000_Project1_Task_list/media/Logomedia.fw.png">
+    
+    <!-- CSS SECTION -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- SCRIPTS SECTION -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <title>Portfolio - Karlgarmor | AGZsoftSI</title>
+</head>
+<body class="body-v1">
+
+<!-- Page Loader -->
+<script>
+  window.onload = function(){
+    var carga = document.getElementById('loader-container')
+    carga.style.visibility = 'hidden';
+    carga.style.opacity = '0';
+}
+</script>
+
+<div id="loader-container">
+  <div id="loader1"></div>
+  <div id="loader2"></div>
+</div>
+
+
+
+    <!-- HEADER SECTION -->
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+           <!-- <a class="navbar-brand" href="#"><img src="./media/Logon2.png" width="40px" height="40px" alt="" srcset=""></a>-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fas fa-code toggle-b"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+               <!-- <a class="nav-link" href="#about">About</a>-->
+                <a class="nav-link" href="#projects">Projects</a>
+                
+              </div>
+            </div>
+           
+          </nav>
+          
+          <div class="jumbotron jumbotron-fluid row mb-0 text-center justify-content-center">
+            <div class="container text-intro animate__animated animate__bounceInLeft p-3">
+              <h1 class="display-3 title">&lt;Hello World/&gt;</h1>
+              <h2 class="title2">I'm Carlos Garcia</h2>
+              <h3 class="title2">FullStack Developer</h3>
+              
+              
+              <hr class="my-4">
+              <h5 class="text-primary font-weight-bold title4">Thanks for visiting my Portfolio!</h5>
+              <p class="title3">If you want to contact me, and learn more about me, here are some means of contact below.
+                I would like to help you to build something cool.</p>
+             
+
+                <a href="https://www.linkedin.com/in/karlgarmor/" title="Download my Resume" target="_blank" class="bg-social"><i class="fas fa-poll-h"></i></a>  
+                    <a href="https://www.linkedin.com/in/karlgarmor/" title="Visit linkedin" target="_blank" class="bg-social"> <i class="fab fa-linkedin"></i></a>  
+                    <a href="https://github.com/agzsoftsi" title="Visit on Github" target="_blank" class="bg-social"><i class="fab fa-github-square"></i></a>
+                    <a href="https://twitter.com/karlgarmor" title="Visit on Twitter" target="_blank" class="bg-social"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Visit on Youtube" target="_blank" class="bg-social"><i class="fab fa-youtube-square"></i></a>
+               
+
+            
+            </div>
+        
+         
+          </div>
+            
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main>
+      <div class="divbar"></div>
+     <!-- <section id="about" class="about-section-class p-3">
+       
+        <h1 class="display-3 text-light mt-5 section-title">&lt;About Me/&gt;</h1>
+        
+        <h6 class="ml-2 mycode">
+          {
+             <p class="ml-4"> <span class="text-p font-weight-bold">name</span>: <span class="data-p">"Carlos Andres Garcia Morales"</span>,</p> 
+             <p class="ml-4"> <span class="text-p font-weight-bold">roles</span>: ["FrontEnd", "BackEnd"],</p>
+             <p class="ml-4"> <span class="text-p font-weight-bold">languages</span>: ["JavaScript", "Python","C/C++"],</p>
+             <p class="ml-4"> <span class="text-p font-weight-bold">soft</span>: ["Creativity", "Adaptability","Collaboration","Time Management"],</p>
+             <p class="ml-4"> <span class="text-p font-weight-bold">hard</span>: ["Problem-solving", "Multitasking","Attention to detail"],</p>
+             <p class="ml-4"> <span class="text-p font-weight-bold">hobbies</span>: ["Share with Family and friends", "Games", "Hiking", "Travel", "Smile to Life"],</p>
+             
+          }
+      </h6>
+
+    </section>
+    --> 
+        <section id="projects" class="project-section-class container-fluid mb-5">
+          <h1 class="display-3 text-light mt-5 section-title text-center pt-5">&lt;Projects/&gt;</h1>
+          <div class="row justify-content-center">
+
+            <div class="card-project text-center ">
+              <div class="title-card">TaskList App</div>
+              <div class="pic-card">    
+              </div>
+              <div class="info-card">
+                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
+              </div>
+               <div class="line-card"></div>            
+              <div class="tech-card">
+                <h5>Technologies</h5>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-bootstrap"></i>
+                <p>Version: 1.0</p>
+              </div>
+              <img src="./media/logos/TaskList.png" alt="">
+              <div class="media-card">
+                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
+                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
+              </div>
+              <div class="shadow-card"></div>
+            </div>
+
+
+
+
+            <div class="card-project text-center ">
+              <div class="title-card">Avatar App</div>
+              <div class="pic-card">    
+              </div>
+              <div class="info-card">
+                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
+              </div>
+               <div class="line-card"></div>            
+              <div class="tech-card">
+                <h5>Technologies</h5>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-bootstrap"></i>
+                <p>Version: 1.0</p>
+              </div>
+              <img src="./media/logos/AvatarGen.png" alt="">
+              <div class="media-card">
+                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
+                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
+              </div>
+              <div class="shadow-card"></div>
+            </div>
+
+
+
+
+
+            <div class="card-project text-center ">
+              <div class="title-card">Phrase Generator App</div>
+              <div class="pic-card">    
+              </div>
+              <div class="info-card">
+                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
+              </div>
+               <div class="line-card"></div>            
+              <div class="tech-card">
+                <h5>Technologies</h5>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-bootstrap"></i>
+                <p>Version: 1.0</p>
+              </div>
+              <img src="./media/logos/Phrasegen.png" alt="">
+              <div class="media-card">
+                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
+                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
+              </div>
+              <div class="shadow-card"></div>
+            </div>
+
+
+
+
+
+            <div class="card-project text-center ">
+              <div class="title-card">JSQuizz App</div>
+              <div class="pic-card">    
+              </div>
+              <div class="info-card">
+                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
+              </div>
+               <div class="line-card"></div>            
+              <div class="tech-card">
+                <h5>Technologies</h5>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-bootstrap"></i>
+                <p>Version: 1.0</p>
+              </div>
+              <img src="./media/logos/JSQuizz.png" alt="">
+              <div class="media-card">
+                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
+                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
+              </div>
+              <div class="shadow-card"></div>
+            </div>
+
+
+
+
+
+            <div class="card-project text-center ">
+              <div class="title-card">KarloStation App</div>
+              <div class="pic-card">    
+              </div>
+              <div class="info-card">
+                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
+              </div>
+               <div class="line-card"></div>            
+              <div class="tech-card">
+                <h5>Technologies</h5>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-bootstrap"></i>
+                <p>Version: 1.0</p>
+              </div>
+              <img src="./media/logos/TaskList.png" alt="">
+              <div class="media-card">
+                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
+                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
+              </div>
+              <div class="shadow-card"></div>
+            </div>
+
+
+
+
+
+            <div class="card-project text-center ">
+              <div class="title-card">Tell Me! App</div>
+              <div class="pic-card">    
+              </div>
+              <div class="info-card">
+                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
+              </div>
+               <div class="line-card"></div>            
+              <div class="tech-card">
+                <h5>Technologies</h5>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-bootstrap"></i>
+                <p>Version: 1.0</p>
+              </div>
+              <img src="./media/logos/Tellme.png" alt="">
+              <div class="media-card">
+                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
+                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
+              </div>
+              <div class="shadow-card"></div>
+            </div>
+
+            <div class="card-project text-center ">
+              <div class="title-card">KarlChatApp</div>
+              <div class="pic-card">    
+              </div>
+              <div class="info-card">
+                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
+              </div>
+               <div class="line-card"></div>            
+              <div class="tech-card">
+                <h5>Technologies</h5>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-bootstrap"></i>
+                <p>Version: 1.0</p>
+              </div>
+              <img src="./media/logos/Tellme.png" alt="">
+              <div class="media-card">
+                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
+                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
+              </div>
+              <div class="shadow-card"></div>
+            </div>
+
+            <div class="card-project text-center ">
+              <div class="title-card">Smiling School Site</div>
+              <div class="pic-card">    
+              </div>
+              <div class="info-card">
+                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
+              </div>
+               <div class="line-card"></div>            
+              <div class="tech-card">
+                <h5>Technologies</h5>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-bootstrap"></i>
+                <p>Version: 1.0</p>
+              </div>
+              <img src="./media/logos/Tellme.png" alt="">
+              <div class="media-card">
+                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
+                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
+              </div>
+              <div class="shadow-card"></div>
+            </div>
+
+            <div class="card-project text-center ">
+              <div class="title-card">Headphones Site</div>
+              <div class="pic-card">    
+              </div>
+              <div class="info-card">
+                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
+              </div>
+               <div class="line-card"></div>            
+              <div class="tech-card">
+                <h5>Technologies</h5>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-bootstrap"></i>
+                <p>Version: 1.0</p>
+              </div>
+              <img src="./media/logos/Tellme.png" alt="">
+              <div class="media-card">
+                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
+                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
+              </div>
+              <div class="shadow-card"></div>
+            </div>
+
+            <div class="card-project text-center ">
+              <div class="title-card">Twitter Clone</div>
+              <div class="pic-card">    
+              </div>
+              <div class="info-card">
+                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
+              </div>
+               <div class="line-card"></div>            
+              <div class="tech-card">
+                <h5>Technologies</h5>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-bootstrap"></i>
+                <p>Version: 1.0</p>
+              </div>
+              <img src="./media/logos/Tellme.png" alt="">
+              <div class="media-card">
+                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
+                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
+              </div>
+              <div class="shadow-card"></div>
+            </div>
+
+            <div class="card-project text-center ">
+              <div class="title-card">WhatsApp Clone</div>
+              <div class="pic-card">    
+              </div>
+              <div class="info-card">
+                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
+              </div>
+               <div class="line-card"></div>            
+              <div class="tech-card">
+                <h5>Technologies</h5>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-bootstrap"></i>
+                <p>Version: 1.0</p>
+              </div>
+              <img src="./media/logos/Tellme.png" alt="">
+              <div class="media-card">
+                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
+                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
+              </div>
+              <div class="shadow-card"></div>
+            </div>
+
+            <div class="card-project text-center ">
+              <div class="title-card">AirBnB Clone</div>
+              <div class="pic-card">    
+              </div>
+              <div class="info-card">
+                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
+              </div>
+               <div class="line-card"></div>            
+              <div class="tech-card">
+                <h5>Technologies</h5>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-bootstrap"></i>
+                <p>Version: 1.0</p>
+              </div>
+              <img src="./media/logos/Tellme.png" alt="">
+              <div class="media-card">
+                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
+                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
+              </div>
+              <div class="shadow-card"></div>
+            </div>
+
+            <div class="card-project text-center ">
+              <div class="title-card">NetFlix Clone</div>
+              <div class="pic-card">    
+              </div>
+              <div class="info-card">
+                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
+              </div>
+               <div class="line-card"></div>            
+              <div class="tech-card">
+                <h5>Technologies</h5>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-bootstrap"></i>
+                <p>Version: 1.0</p>
+              </div>
+              <img src="./media/logos/Tellme.png" alt="">
+              <div class="media-card">
+                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
+                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
+              </div>
+              <div class="shadow-card"></div>
+            </div>
+
+            <div class="card-project text-center ">
+              <div class="title-card">Amazone Clone</div>
+              <div class="pic-card">    
+              </div>
+              <div class="info-card">
+                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
+              </div>
+               <div class="line-card"></div>            
+              <div class="tech-card">
+                <h5>Technologies</h5>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-bootstrap"></i>
+                <p>Version: 1.0</p>
+              </div>
+              <img src="./media/logos/Tellme.png" alt="">
+              <div class="media-card">
+                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
+                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
+              </div>
+              <div class="shadow-card"></div>
+            </div>
+
+
+            <div class="card-project text-center ">
+              <div class="title-card">Spotify Clone</div>
+              <div class="pic-card">    
+              </div>
+              <div class="info-card">
+                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
+              </div>
+               <div class="line-card"></div>            
+              <div class="tech-card">
+                <h5>Technologies</h5>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-bootstrap"></i>
+                <p>Version: 1.0</p>
+              </div>
+              <img src="./media/logos/Tellme.png" alt="">
+              <div class="media-card">
+                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
+                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
+              </div>
+              <div class="shadow-card"></div>
+            </div>
+
+          
+          
+          
+          
+          
+          </div>
+        
+        
+        
+          
+              
+          
+
+         
+      
+        
+        
+        </section>
+        
+        
+    </main>
+
+        
+     <!-- SCRIPTS SECTION -->
+    
+     <script src="./scripts/script.js"></script>
+</body>
+</html>

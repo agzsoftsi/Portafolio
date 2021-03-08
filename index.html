@@ -1,558 +1,1296 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
 
-    <!-- ICON SECTION -->
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="./media/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./media/favicon-16x16.png">
-    <link rel="manifest" href="./media/site.webmanifest">
-    <link rel="mask-icon" href="./media/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="theme-color" content="#ffffff">
-
-      <!-- Fonts TAGS SECTION -->
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Slab&display=swap" rel="stylesheet">
-
-    <!-- PRIMARY TAGS SECTION -->
-    <meta property="card" content="summary_large_image">
-    <meta property="url" content="https://agzsoftsi.github.io/Portafolio/">
-    <meta name="title" content="Portafolio">
-    <meta name="description" content="Personal Web Portafolio - Know my projets, My experience like a Web Developer">
-    <meta property="image" content="https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/000_Project1_Task_list/media/Logomedia.fw.png">
-
-    <!-- PRIMARY TAGS TWITTER SECTION -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://agzsoftsi.github.io/Portafolio/">
-    <meta property="twitter:title" content="Portafolio">
-    <meta property="twitter:description" content="Personal Web Portafolio - Know my projets, My experience like a Web Developer">
-    <meta property="twitter:image" content="https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/000_Project1_Task_list/media/Logomedia.fw.png">
-    
-    <!-- CSS SECTION -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-
-    <!-- SCRIPTS SECTION -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    <title>Portfolio - Karlgarmor | AGZsoftSI</title>
-</head>
-<body class="body-v1">
-
-<!-- Page Loader -->
-<script>
-  window.onload = function(){
-    var carga = document.getElementById('loader-container')
-    carga.style.visibility = 'hidden';
-    carga.style.opacity = '0';
-}
-</script>
-
-<div id="loader-container">
-  <div id="loader1"></div>
-  <div id="loader2"></div>
-</div>
-
-
-
-    <!-- HEADER SECTION -->
-    <header>
-        <nav class="navbar navbar-expand-md fixed-top">
-           <!-- <a class="navbar-brand" href="#"><img src="./media/Logon2.png" width="40px" height="40px" alt="" srcset=""></a>-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="fas fa-code toggle-b"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-               <!-- <a class="nav-link" href="#about">About</a>-->
-                <a class="nav-link" href="#projects">Projects</a>
-                
-              </div>
-            </div>
-           
-          </nav>
-          
-          <div class="jumbotron jumbotron-fluid row mb-0 text-center justify-content-center">
-            <div class="container text-intro animate__animated animate__bounceInLeft p-3">
-              <h1 class="display-3 title">&lt;Hello World/&gt;</h1>
-              <h2 class="title2">I'm Carlos Garcia</h2>
-              <h3 class="title2">FullStack Developer</h3>
-              
-              
-              <hr class="my-4">
-              <h5 class="text-primary font-weight-bold title4">Thanks for visiting my Portfolio!</h5>
-              <p class="title3">If you want to contact me, and learn more about me, here are some means of contact below.
-                I would like to help you to build something cool.</p>
-             
-
-                <a href="https://www.linkedin.com/in/karlgarmor/" title="Download my Resume" target="_blank" class="bg-social"><i class="fas fa-poll-h"></i></a>  
-                    <a href="https://www.linkedin.com/in/karlgarmor/" title="Visit linkedin" target="_blank" class="bg-social"> <i class="fab fa-linkedin"></i></a>  
-                    <a href="https://github.com/agzsoftsi" title="Visit on Github" target="_blank" class="bg-social"><i class="fab fa-github-square"></i></a>
-                    <a href="https://twitter.com/karlgarmor" title="Visit on Twitter" target="_blank" class="bg-social"><i class="fab fa-twitter-square"></i></a>
-                    <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Visit on Youtube" target="_blank" class="bg-social"><i class="fab fa-youtube-square"></i></a>
-               
-
-            
-            </div>
-        
-         
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Karlgarmor | Website</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="all,follow" />
+    <!--Sharing link-->
+    <meta property='og:title' content='Karlgarmor Website'/>
+    <meta property="og:image" content="" />
+    <meta property='og:description' content='Check out my latest projects!'/>
+    <meta property='og:url' content='https://agzsoftsi.github.io/Portafolio/'/>
+    <!-- Loading Page CSS-->
+    <link rel="stylesheet" href="./utils/styles/loading_page.css" />
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="./utils/styles/bootstrap.min.css" />
+    <!-- Google fonts - Roboto + Roboto Slab-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300"
+    />
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="./utils/styles/owl.carousel.css" />
+    <link rel="stylesheet" href="./utils/styles/owl.theme.default.css" />
+    <!-- animate.css-->
+    <link rel="stylesheet" href="./utils/styles/animate.css" />
+    <!-- theme stylesheet-->
+    <link
+      rel="stylesheet"
+      href="./utils/styles/style.default.css"
+      id="theme-stylesheet"
+    />
+    <!-- Custom stylesheet-->
+    <link rel="stylesheet" href="./utils/styles/custom.css" />
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="./utils/images/icon/logo.png" />
+    <!--script load page-->
+    <script type="text/javascript" src="./utils/scripts/jquery.js"></script>
+    <script type="text/javascript" src="./utils/scripts/loading_page.js"></script>
+    <!--end script load page-->
+  </head>
+  <body>
+    <!-- load logo-->
+    <div class="loader">
+      <div class="f_loading">
+        <div class="text-center">
+         <!-- <img
+            src="./utils/images/icon/logo.png"
+            alt=""
+            class="resize_logo mt-2"
+          />
+          <br>
+          <h3 class="initial_color mt-3">
+            &lt;Hola&gt;, {Hello}, [Salut]
+          </h3>-->
+          <img
+            src="./utils/images/other/loaderf1.gif"
+            alt=""
+            class="resize_logo m_gif"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+         <!-- <a href="#intro" class="navbar-brand link-scroll scrollTo"
+            ><img src="./utils/images/titles/toptitle.png" ></a
+          >-->
+          <button
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarcollapse"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler navbar-toggler-right"
+          >
+            <span class="fas fa-code" style="color: rgb(0, 183, 255);"></span>
+          </button>
+          <div id="navbarcollapse" class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#intro" class="nav-link link-scroll">Intro</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link link-scroll">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link link-scroll">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#references" class="nav-link link-scroll">My work</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link link-scroll">Contact</a>
+              </li>
+            </ul>
           </div>
-            
+        </div>
+      </nav>
     </header>
+    <!-- Intro Image-->
+    <section
+      id="intro"
+      style="
+        background: url(./utils/images/cover/Optimized-HomeHD8.jpg) center
+          center no-repeat;
+        background-size: cover;
+      "
+      class="intro-section pb-2 text-center"
+    >
 
-    <!-- MAIN SECTION -->
-    <main>
-      <div class="divbar"></div>
-     <!-- <section id="about" class="about-section-class p-3">
-       
-        <h1 class="display-3 text-light mt-5 section-title">&lt;About Me/&gt;</h1>
-        
-        <h6 class="ml-2 mycode">
-          {
-             <p class="ml-4"> <span class="text-p font-weight-bold">name</span>: <span class="data-p">"Carlos Andres Garcia Morales"</span>,</p> 
-             <p class="ml-4"> <span class="text-p font-weight-bold">roles</span>: ["FrontEnd", "BackEnd"],</p>
-             <p class="ml-4"> <span class="text-p font-weight-bold">languages</span>: ["JavaScript", "Python","C/C++"],</p>
-             <p class="ml-4"> <span class="text-p font-weight-bold">soft</span>: ["Creativity", "Adaptability","Collaboration","Time Management"],</p>
-             <p class="ml-4"> <span class="text-p font-weight-bold">hard</span>: ["Problem-solving", "Multitasking","Attention to detail"],</p>
-             <p class="ml-4"> <span class="text-p font-weight-bold">hobbies</span>: ["Share with Family and friends", "Games", "Hiking", "Travel", "Smile to Life"],</p>
-             
-          }
-      </h6>
+    <!-- Intro-Info -->
+    <div class="container text-intro p-3 intro-info">
+      <h1 class="display-3 title">&lt;Hello World/&gt;</h1>
+      <h2 class="title2">I'm Carlos Garcia</h2>
+      <h3 class="title2">FULLSTACK SOFTWARE DEVELOPER</h3>
+      <h5 class="text-primary font-weight-bold title4">&lt;Thanks for visiting my Portfolio/&gt;</h5>
+      <p class="title3">I would like to help you to build cool stuffs.</p>
+           
+    </div>
+  
+  </section>
+    <!-- About-->
+    <section id="about" class="about-section bg-gray">
+      <div class="container">
+        <header class="text-center">
+          <h2 data-animate="fadeInDown" class="title">&lt;About me/&gt;</h2>
+        </header>
+        <div class="row">
+          <div data-animate="fadeInUp" class="col-lg-6 content_space">
+            <p class="text-justify">
+              I'm a Fullstack software developer with more than 3 years of experience developing software for the web, and more than 10 years working in the computer networks and telecommunications industry.
 
-    </section>
-    --> 
-        <section id="projects" class="project-section-class container-fluid mb-5">
-          <h1 class="display-3 text-light mt-5 section-title text-center pt-5">&lt;Projects/&gt;</h1>
-          <div class="row justify-content-center">
+            </p>
+            <p class="text-justify">
+              I am a professional with a passion for exploration, creation and innovation in the technological vanguards. Specialized in the development of web applications with the MERN stack, API integration, knowledge in UI / UX and management of cloud services (AWS, GCP, Azure).
+            </p>
+            <p class="text-justify">
+              Currently, I'm interested in build amazing web applications that can innovate the experience to the companies and user when access the data.
+            </p>
+            <!--Tech skill-->
+            <div data-animate="fadeInDown" class="text-center text-justify">
+              <div class="container">
+                <header class="text-center">
+                  <h2 data-animate="fadeInDown" class="title tech_title">
+                    Technical Skills
+                  </h2>
+                </header>
+                <div class="row justify-content-center" data-animate="fadeInUp">
+                  <p class="mr-3 icon_size" title="HTML5">
+                    <i class="fab fa-html5"></i>
+                  </p>
+                  <p class="mr-3 icon_size" title="CSS">
+                    <i class="fab fa-css3-alt"></i>
+                  </p>
+                  <p class="mr-3 icon_size" title="JavaScript">
+                    <i class="fab fa-js"></i>
+                  </p>
+                  <p class="mr-3 icon_size" title="C">
+                    <i class="fas fa-copyright"></i>
+                  </p>
 
-            <div class="card-project text-center ">
-              <div class="title-card">TaskList App</div>
-              <div class="pic-card">    
+                  <p class="mr-3 icon_size" title="Node.js">
+                    <i class="fab fa-node-js"></i>
+                  </p>
+
+                  <p class="mr-3 icon_size" title="React.js">
+                    <i class="fab fa-react"></i>
+                  </p>
+
+                  <p class="mr-3 icon_size" title="Python">
+                    <i class="fab fa-python"></i>
+                  </p>
+
+                  <p class="mr-3 icon_size" title="MySQL | MongoDB">
+                    <i class="fas fa-database"></i>
+                  </p>
+
+                  <p class="mr-3 icon_size" title="Git">
+                    <i class="fab fa-git-square"></i>
+                  </p>
+
+                  <p class="mr-3 icon_size" title="AWS">
+                    <i class="fab fa-aws"></i>
+                  </p>
+                  <p class="mr-3 icon_size" title="Google Cloud Platform">
+                    <i class="fab fa-google"></i>
+                  </p>
+                  <p class="mr-3 icon_size" title="Microsoft Azure">
+                    <i class="fab fa-microsoft"></i>
+                  </p>
+                  <p class="mr-3 icon_size" title="Linux">
+                    <i class="fab fa-ubuntu"></i>
+                  </p>
+                  <p class="mr-3 icon_size" title="Docker">
+                    <i class="fab fa-docker"></i>
+                  </p>
+
+                  <p class="mr-3 icon_size" title="Unity">
+                    <i class="fab fa-unity"></i>
+                  </p>
+            
+
+                  
+
+                  
+                </div>
               </div>
-              <div class="info-card">
-                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
-              </div>
-               <div class="line-card"></div>            
-              <div class="tech-card">
-                <h5>Technologies</h5>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-bootstrap"></i>
-                <p>Version: 1.0</p>
-              </div>
-              <img src="./media/logos/TaskList.png" alt="">
-              <div class="media-card">
-                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
-                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
-              </div>
-              <div class="shadow-card"></div>
             </div>
-
-
-
-
-            <div class="card-project text-center ">
-              <div class="title-card">Avatar App</div>
-              <div class="pic-card">    
-              </div>
-              <div class="info-card">
-                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
-              </div>
-               <div class="line-card"></div>            
-              <div class="tech-card">
-                <h5>Technologies</h5>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-bootstrap"></i>
-                <p>Version: 1.0</p>
-              </div>
-              <img src="./media/logos/AvatarGen.png" alt="">
-              <div class="media-card">
-                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
-                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
-              </div>
-              <div class="shadow-card"></div>
-            </div>
-
-
-
-
-
-            <div class="card-project text-center ">
-              <div class="title-card">Phrase Generator App</div>
-              <div class="pic-card">    
-              </div>
-              <div class="info-card">
-                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
-              </div>
-               <div class="line-card"></div>            
-              <div class="tech-card">
-                <h5>Technologies</h5>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-bootstrap"></i>
-                <p>Version: 1.0</p>
-              </div>
-              <img src="./media/logos/Phrasegen.png" alt="">
-              <div class="media-card">
-                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
-                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
-              </div>
-              <div class="shadow-card"></div>
-            </div>
-
-
-
-
-
-            <div class="card-project text-center ">
-              <div class="title-card">JSQuizz App</div>
-              <div class="pic-card">    
-              </div>
-              <div class="info-card">
-                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
-              </div>
-               <div class="line-card"></div>            
-              <div class="tech-card">
-                <h5>Technologies</h5>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-bootstrap"></i>
-                <p>Version: 1.0</p>
-              </div>
-              <img src="./media/logos/JSQuizz.png" alt="">
-              <div class="media-card">
-                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
-                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
-              </div>
-              <div class="shadow-card"></div>
-            </div>
-
-
-
-
-
-            <div class="card-project text-center ">
-              <div class="title-card">KarloStation App</div>
-              <div class="pic-card">    
-              </div>
-              <div class="info-card">
-                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
-              </div>
-               <div class="line-card"></div>            
-              <div class="tech-card">
-                <h5>Technologies</h5>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-bootstrap"></i>
-                <p>Version: 1.0</p>
-              </div>
-              <img src="./media/logos/TaskList.png" alt="">
-              <div class="media-card">
-                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
-                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
-              </div>
-              <div class="shadow-card"></div>
-            </div>
-
-
-
-
-
-            <div class="card-project text-center ">
-              <div class="title-card">Tell Me! App</div>
-              <div class="pic-card">    
-              </div>
-              <div class="info-card">
-                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
-              </div>
-               <div class="line-card"></div>            
-              <div class="tech-card">
-                <h5>Technologies</h5>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-bootstrap"></i>
-                <p>Version: 1.0</p>
-              </div>
-              <img src="./media/logos/Tellme.png" alt="">
-              <div class="media-card">
-                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
-                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
-              </div>
-              <div class="shadow-card"></div>
-            </div>
-
-            <div class="card-project text-center ">
-              <div class="title-card">KarlChatApp</div>
-              <div class="pic-card">    
-              </div>
-              <div class="info-card">
-                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
-              </div>
-               <div class="line-card"></div>            
-              <div class="tech-card">
-                <h5>Technologies</h5>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-bootstrap"></i>
-                <p>Version: 1.0</p>
-              </div>
-              <img src="./media/logos/Tellme.png" alt="">
-              <div class="media-card">
-                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
-                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
-              </div>
-              <div class="shadow-card"></div>
-            </div>
-
-            <div class="card-project text-center ">
-              <div class="title-card">Smiling School Site</div>
-              <div class="pic-card">    
-              </div>
-              <div class="info-card">
-                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
-              </div>
-               <div class="line-card"></div>            
-              <div class="tech-card">
-                <h5>Technologies</h5>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-bootstrap"></i>
-                <p>Version: 1.0</p>
-              </div>
-              <img src="./media/logos/Tellme.png" alt="">
-              <div class="media-card">
-                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
-                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
-              </div>
-              <div class="shadow-card"></div>
-            </div>
-
-            <div class="card-project text-center ">
-              <div class="title-card">Headphones Site</div>
-              <div class="pic-card">    
-              </div>
-              <div class="info-card">
-                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
-              </div>
-               <div class="line-card"></div>            
-              <div class="tech-card">
-                <h5>Technologies</h5>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-bootstrap"></i>
-                <p>Version: 1.0</p>
-              </div>
-              <img src="./media/logos/Tellme.png" alt="">
-              <div class="media-card">
-                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
-                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
-              </div>
-              <div class="shadow-card"></div>
-            </div>
-
-            <div class="card-project text-center ">
-              <div class="title-card">Twitter Clone</div>
-              <div class="pic-card">    
-              </div>
-              <div class="info-card">
-                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
-              </div>
-               <div class="line-card"></div>            
-              <div class="tech-card">
-                <h5>Technologies</h5>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-bootstrap"></i>
-                <p>Version: 1.0</p>
-              </div>
-              <img src="./media/logos/Tellme.png" alt="">
-              <div class="media-card">
-                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
-                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
-              </div>
-              <div class="shadow-card"></div>
-            </div>
-
-            <div class="card-project text-center ">
-              <div class="title-card">WhatsApp Clone</div>
-              <div class="pic-card">    
-              </div>
-              <div class="info-card">
-                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
-              </div>
-               <div class="line-card"></div>            
-              <div class="tech-card">
-                <h5>Technologies</h5>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-bootstrap"></i>
-                <p>Version: 1.0</p>
-              </div>
-              <img src="./media/logos/Tellme.png" alt="">
-              <div class="media-card">
-                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
-                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
-              </div>
-              <div class="shadow-card"></div>
-            </div>
-
-            <div class="card-project text-center ">
-              <div class="title-card">AirBnB Clone</div>
-              <div class="pic-card">    
-              </div>
-              <div class="info-card">
-                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
-              </div>
-               <div class="line-card"></div>            
-              <div class="tech-card">
-                <h5>Technologies</h5>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-bootstrap"></i>
-                <p>Version: 1.0</p>
-              </div>
-              <img src="./media/logos/Tellme.png" alt="">
-              <div class="media-card">
-                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
-                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
-              </div>
-              <div class="shadow-card"></div>
-            </div>
-
-            <div class="card-project text-center ">
-              <div class="title-card">NetFlix Clone</div>
-              <div class="pic-card">    
-              </div>
-              <div class="info-card">
-                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
-              </div>
-               <div class="line-card"></div>            
-              <div class="tech-card">
-                <h5>Technologies</h5>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-bootstrap"></i>
-                <p>Version: 1.0</p>
-              </div>
-              <img src="./media/logos/Tellme.png" alt="">
-              <div class="media-card">
-                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
-                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
-              </div>
-              <div class="shadow-card"></div>
-            </div>
-
-            <div class="card-project text-center ">
-              <div class="title-card">Amazone Clone</div>
-              <div class="pic-card">    
-              </div>
-              <div class="info-card">
-                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
-              </div>
-               <div class="line-card"></div>            
-              <div class="tech-card">
-                <h5>Technologies</h5>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-bootstrap"></i>
-                <p>Version: 1.0</p>
-              </div>
-              <img src="./media/logos/Tellme.png" alt="">
-              <div class="media-card">
-                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
-                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
-              </div>
-              <div class="shadow-card"></div>
-            </div>
-
-
-            <div class="card-project text-center ">
-              <div class="title-card">Spotify Clone</div>
-              <div class="pic-card">    
-              </div>
-              <div class="info-card">
-                Basic App to manage Task List (create, delete, monitoring your daily Tasks).
-              </div>
-               <div class="line-card"></div>            
-              <div class="tech-card">
-                <h5>Technologies</h5>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-bootstrap"></i>
-                <p>Version: 1.0</p>
-              </div>
-              <img src="./media/logos/Tellme.png" alt="">
-              <div class="media-card">
-                <a href="https://www.linkedin.com/in/karlgarmor/" title="Run App" target="_blank" class="bg-media"> <i class="fas fa-play-circle"></i></a>  
-                <a href="https://github.com/agzsoftsi" title="Review Code on Github" target="_blank" class="bg-media"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Watch Video Demo" target="_blank" class="bg-media"><i class="fas fa-film"></i></a>
-              </div>
-              <div class="shadow-card"></div>
-            </div>
-
-          
-          
-          
-          
-          
+            <!--Tech skill-->
           </div>
-        
-        
-        
-          
-              
-          
+          <div data-animate="fadeInUp" class="col-sm-5 mx-auto mt-0">
+            <img
+              src="./utils/images/cover/Pic2.png"
+              alt="Carlos Andres Garcia Morales"
+              class="image img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Service-->
+    <section id="services" class="bg-gradient services-section">
+      <div class="container">
+        <header class="text-center">
+          <h2 data-animate="fadeInDown" class="title title_services">
+            &lt;Services/&gt;
+          </h2>
+        </header>
+        <div class="row services text-center">
+          <div data-animate="fadeInUp" class="col-lg-3">
+            <div class="icon"><i class="fab fa-html5"></i></div>
+            <h3 class="heading mb-3 text-400">Web Development</h3>
+            <p class="text-left description">
+              Would you like to have the best virtual store for your bussines, or just
+              have your professional web site for showing your work? I can help you
+              enter the digital age.
+            </p>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-3">
+            <div class="icon"><i class="fas fa-gamepad"></i></div>
+            <h3 class="heading mb-3 text-400">Interactive Solutions</h3>
+            <p class="text-left description">
+              Do you have a lot of information about your customers and your business is
+              stagnant? Machine Learning and I can help you focus your energy and resources
+              to increase your profits.
+            </p>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-3">
+            <div class="icon"><i class="fas fa-server"></i></div>
+            <h3 class="heading mb-3 text-400">Cloud Infrastructure</h3>
+            <p class="text-left description">
+              Craved to have a futuristic home or just measure and to control
+              the weather of your crops? I can help you to integrate the
+              technology for making your life easier.
+            </p>
+          </div>
 
-         
-      
-        
-        
-        </section>
-        
-        
-    </main>
+          <div data-animate="fadeInUp" class="col-lg-3">
+            <div class="icon"><i class="fas fa-hands-helping"></i></div>
+            <h3 class="heading mb-3 text-400">Specialized Consulting</h3>
+            <p class="text-left description">
+              Craved to have a futuristic home or just measure and to control
+              the weather of your crops? I can help you to integrate the
+              technology for making your life easier.
+            </p>
+          </div>
+        </div>
 
-        
-     <!-- SCRIPTS SECTION -->
-    
-     <script src="./scripts/script.js"></script>
-</body>
+        <hr data-animate="fadeInUp" />
+        <div data-animate="fadeInUp" class="text-center">
+          <p class="lead contact_m">
+            Let's talk!, I would like to help you to build cool stuffs!
+          </p>
+          <p>
+            <a
+              href="#contact"
+              class="btn btn-outline-light link-scroll button_contact_me"
+              >Contact me</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- My Work -->
+    <section id="references" class="bg-gray">
+      <div class="container">
+        <div class="col-sm-12">
+          <div class="mb-5 text-center">
+            <h2 data-animate="fadeInUp" class="title">&lt;My Projects/&gt;</h2>
+            <p data-animate="fadeInUp" class="lead">
+              As Fullstack Software Developer I have worked on a lot of projects so look
+              at my latest ones!
+            </p>
+          </div>
+          <ul id="filter" data-animate="fadeInUp">
+            <li class="active"><a href="#" data-filter="all">All</a></li>
+            <li><a href="#" data-filter="Web Development">Web Development</a></li>
+            <li><a href="#" data-filter="Web Clones">Web Clones - UI/UX</a></li>
+            <li><a href="#" data-filter="Interactive Solutions">Interactive Solutions</a></li>
+            <li><a href="#" data-filter="Others">Others</a></li>
+          </ul>
+          <div id="detail">
+            <div class="row">
+              <div class="col-lg-10 mx-auto text-center">
+                <span class="close">×</span>
+                <div id="detail-slider" class="owl-carousel owl-theme"></div>
+                <div class="text-center">
+                  <h1 id="detail-title" class="title"></h1>
+                </div>
+                <div id="detail-content"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Reference detail-->
+          <div id="references-masonry" data-animate="fadeInUp">
+            <div class="row">
+                    <!-- Card 1 -->
+                    <div data-category="Interactive Solutions" class="reference-item col-lg-3 col-md-6">
+                      <div class="reference rounded">
+                        <a href="#"><img src="./utils/images/games/introstarysafe.png" alt="" class="img-fluid"/>
+                          <div class="overlay">
+                            <div class="inner">
+                              <h3 class="h4 reference-title">StaySafe v1.0</h3>
+                              <p>Simple jumper Game with Unity2D</p>
+                            </div>
+                          </div>
+                        </a>
+                        <div data-images="./utils/images/games/sc1.jpg, ./utils/images/games/sc2.jpg, ./utils/images/games/sc3.jpg" class="sr-only reference-description">
+                          <p class="text-justify">
+                            Stay Safe is a simple Jumping game, where girl/boy must stay as many days as possible without being infected by the Covid-19 virus.
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>FEATURES</h5>
+                            <ul class="text-left">
+                              <li>Main menu with 2 characters to choose.</li>
+                              <li>Stage for girl | Stage for Boy.</li>
+                              <li>Jump function.</li>
+                              <li>Enemies implemented(Covid-19).</li>
+                              <li>Lose function implemented.</li>
+                              <li>Restart Stage option implemented. (key space).</li>
+                              <li>Go Back to main Menu implemented. (key Escape).</li>
+                              <li>Days counter implemented (score).</li>
+                              <li>Support for Google Chrome, Firefox, Microsoft Edge (Recommended PC browser).</li>
+                            </ul>
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>TECHNOLOGIES</h5>
+                            <img src="./utils/images/logos/html.png" alt="logo HTML5" title="HTML5">   
+                            <img src="./utils/images/logos/unity.png" alt="logo Unity 2D" title="Unity 2D">
+                            <img src="./utils/images/logos/csharp.png" alt="logo C#" title="C#"> 
+                            <img src="./utils/images/logos/webgl.png" alt="logo WebGL" title="WebGL">                         
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>SOURCES</h5>
+                            <a href="https://github.com/agzsoftsi/StaySafe/" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fab fa-github sources" title="GitHub"></i></a>
+                            <a href="https://agzsoftsi.itch.io/stay-save" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fas fa-play-circle sources" title="Play Game"></i>  </a>
+                          </p>
+                          <div class="embed-responsive embed-responsive-16by9 mt-3">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/1jznbrl-M7w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div data-category="Web Development" class="reference-item col-lg-3 col-md-6">
+                      <div class="reference rounded">
+                        <a href="#"><img src="./utils/images/games/introwhatsapp.gif" alt="" class="img-fluid"/>
+                          <div class="overlay">
+                            <div class="inner">
+                              <h3 class="h4 reference-title">WhatsApp Clone V1.0</h3>
+                              <p>Simple WhatsApp clone with the message function implemented</p>
+                            </div>
+                          </div>
+                        </a>
+                        <div data-images="./utils/images/games/asc1.png, ./utils/images/games/bsc1.png, ./utils/images/games/csc1.png, ./utils/images/games/dsc1.gif" class="sr-only reference-description">
+                          <p class="text-justify">
+                            It's a Simple WhatsApp Clone using HTML, CSS, ReactJS, Redux, Node, Firebase, Google Authentication. WhatsApp Messenger is an instant messaging application for smartphones and browsers, in which messages are sent and received through the Internet, this version has authentication implemented thanks to Firebase Authentication, which works by logging in with Gmail accounts. Among its functions are to create groups or chat rooms and to review the messages that have been sent.
+
+This version is still very basic, so many of the functionalities are not implemented and are only aesthetic.
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>FEATURES</h5>
+                            <ul class="text-left">
+                              <li>Send and receive messages.</li>
+                              <li>Message storage in Firebase Cloud Firestore.</li>
+                              <li>Authenticate with Firebase using Gmail</li>
+                              <li>Dynamic avatar for each Group.</li>
+                              <li>Aesthetic similar to WhatsApp.</li>
+                              <li>Supported in Google Chrome, Firefox, Microsoft Edge browsers.</li>
+                            </ul>
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>TECHNOLOGIES</h5>
+                            <img src="./utils/images/logos/html.png" alt="logo HTML5" title="HTML5">
+                            <img src="./utils/images/logos/css.png" alt="logo CSS" title="CSS"> 
+                            <img src="./utils/images/logos/react.png" alt="logo ReactJS" title="ReactJS">
+                            <img src="./utils/images/logos/redux.png" alt="logo React Redux" title="React Redux">    
+                            <img src="./utils/images/logos/node.png" alt="Logo NodeJs" title="NodeJs">
+                            <img src="./utils/images/logos/fireAu.png" alt="logo Firebase" title="Firebase Authentication">
+                            <img src="./utils/images/logos/fireFire.png" alt="logo Firebase" title="Firebase Cloud Firestore">  
+                            <img src="./utils/images/logos/heroku.png" alt="logo Heroku" title="Heroku">                         
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>SOURCES</h5>
+                            <a href="https://github.com/agzsoftsi/CloneVersion-WhatsApp/" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fab fa-github sources" title="GitHub"></i></a>
+                            <a href="https://whatsapp-clone-karlgarmor.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fas fa-play-circle sources" title="Play Game"></i>  </a>
+                          </p>
+                          <div class="embed-responsive embed-responsive-16by9 mt-3">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/1uaI74tLbHw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                   <!-- Card 3 -->
+                   <div data-category="Web Development" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference rounded">
+                      <a href="#"><img src="./utils/images/games/intropokekarl.gif" alt="" class="img-fluid"/>
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">PokeKarl v1.0</h3>
+                            <p>Custom Pokedex, check the info of all Pokemons</p>
+                          </div>
+                        </div>
+                      </a>
+                      <div data-images="./utils/images/games/sc1.jpg, ./utils/images/games/sc2.jpg, ./utils/images/games/sc3.jpg" class="sr-only reference-description">
+                        <p class="text-justify">
+                          PokeKarl is a simple web App that use the PokeAPI and JavaScript like a core language that can show the basic information for all Pokémon with an easy and cool UI(User interface).
+
+IMPORTANT This project has no commercial purpose and I do not intend to take away the legal right to the content or image of the Pokémon brand, it is only a project made with love and with the purpose of improving my JavaScript programming skills.
+                        </p>
+                        <p class="text-justify">
+                          <hr>
+                          <h5>FEATURES</h5>
+                          <ul class="text-left">
+                            <li>Main menu with 2 characters to choose.</li>
+                            <li>Stage for girl | Stage for Boy.</li>
+                            <li>Jump function.</li>
+                            <li>Enemies implemented(Covid-19).</li>
+                            <li>Lose function implemented.</li>
+                            <li>Restart Stage option implemented. (key space).</li>
+                            <li>Go Back to main Menu implemented. (key Escape).</li>
+                            <li>Days counter implemented (score).</li>
+                            <li>Support for Google Chrome, Firefox, Microsoft Edge (Recommended PC browser).</li>
+                          </ul>
+                        </p>
+                        <p class="text-justify">
+                          <hr>
+                          <h5>TECHNOLOGIES</h5>
+                          <img src="./utils/images/logos/html.png" alt="logo HTML5" title="HTML5">   
+                          <img src="./utils/images/logos/unity.png" alt="logo Unity 2D" title="Unity 2D">
+                          <img src="./utils/images/logos/csharp.png" alt="logo C#" title="C#"> 
+                          <img src="./utils/images/logos/webgl.png" alt="logo WebGL" title="WebGL">                         
+                        </p>
+                        <p class="text-justify">
+                          <hr>
+                          <h5>SOURCES</h5>
+                          <a href="https://github.com/agzsoftsi/CloneVersion-WhatsApp/" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fab fa-github sources" title="GitHub"></i></a>
+                          <a href="https://whatsapp-clone-karlgarmor.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fas fa-play-circle sources" title="Run App"></i>  </a>
+                        </p>
+                        <div class="embed-responsive embed-responsive-16by9 mt-3">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/1jznbrl-M7w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                   <!-- Card 4 -->
+                   <div data-category="Web Clones" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference rounded">
+                      <a href="#"><img src="./utils/images/games/introaribnb.png" alt="" class="img-fluid"/>
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">AirBnB Clone UI</h3>
+                            <p>Web UI airbnb Clone v1.0</p>
+                          </div>
+                        </div>
+                      </a>
+                      <div data-images="./utils/images/games/asc2.jpg, ./utils/images/games/bsc2.jpg, ./utils/images/games/csc2.jpg, ./utils/images/games/dsc2.jpg, ./utils/images/games/esc2.jpg, ./utils/images/games/fsc2.jpg" class="sr-only reference-description">
+                        <p class="text-justify">
+                          It's a Simple WEB UI Clone using HTML, CSS, ReactJS, Redux, Node, animation. This version is still very basic, so many of the functionalities are not implemented and are only aesthetic.
+                        </p>
+                        <p class="text-justify">
+                          <hr>
+                          <h5>FEATURES</h5>
+                          <ul class="text-left">
+                            <li>UI Similiar to the original</li>
+                            <li>Full Responsive.</li>
+                            <li>Date picker (Material UI).</li>
+                            <li>Support for Google Chrome, Firefox, Microsoft Edge (Recommended PC browser).</li>
+                          </ul>
+                        </p>
+                        <p class="text-justify">
+                          <hr>
+                          <h5>TECHNOLOGIES</h5>
+                          <img src="./utils/images/logos/html.png" alt="logo HTML5" title="HTML5">   
+                          <img src="./utils/images/logos/css.png" alt="logo CSS" title="CSS">
+                          <img src="./utils/images/logos/react.png" alt="Logo React" title="ReactJS"> 
+                          <img src="./utils/images/logos/node.png" alt="logo Node" title="NodeJs">    
+                          <img src="./utils/images/logos/heroku.png" alt="logo Heroku" title="Heroku">                     
+                        </p>
+                        <p class="text-justify">
+                          <hr>
+                          <h5>SOURCES</h5>
+                          <a href="https://github.com/agzsoftsi/CloneVersion-AirBnB" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fab fa-github sources" title="GitHub"></i></a>
+                          <a href="https://airbnb-clone-karlgarmor.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fas fa-play-circle sources" title="Run App"></i>  </a>
+                        </p>
+                        <div class="embed-responsive embed-responsive-16by9 mt-3">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/iYIvtBe3rpQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                   <!-- Card 5 -->
+                   <div data-category="Web Clones" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference rounded">
+                      <a href="#"><img src="./utils/images/games/introheadphones.jpg" alt="" class="img-fluid"/>
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Headphones</h3>
+                            <p>Web UI/UX Headphones project.</p>
+                          </div>
+                        </div>
+                      </a>
+                      <div data-images="./utils/images/games/asc3.jpg, ./utils/images/games/bsc3.jpg, ./utils/images/games/csc3.jpg, ./utils/images/games/dsc3.jpg" class="sr-only reference-description">
+                        <p class="text-justify">
+                          In this project, you will implement from scratch, without any library, a web page. You will use all HTML, CSS, Accessibility, Responsive design knowledges that you learned previously.
+                        </p>
+                        <p class="text-justify">
+                          <hr>
+                          <h5>FEATURES</h5>
+                          <ul class="text-left">
+                            <li>UI/UX Design on Figma.</li>
+                            <li>Web design without libraries</li>
+                            <li>Accessibility standards implemented.</li>
+                            <li>Full responsive.</li>
+                            <li>Support for Google Chrome, Firefox, Microsoft Edge.</li>
+                          </ul>
+                        </p>
+                        <p class="text-justify">
+                          <hr>
+                          <h5>TECHNOLOGIES</h5>
+                          <img src="./utils/images/logos/figma.png" alt="logo Figma" title="Figma"> 
+                          <img src="./utils/images/logos/html.png" alt="logo HTML5" title="HTML5">   
+                          <img src="./utils/images/logos/css.png" alt="logo CSS" title="CSS">
+                          <img src="./utils/images/logos/sass.png" alt="logo Sass" title="SASS">
+                          <img src="./utils/images/logos/js.png" alt="logo JavaScript" title="JavaScript"> 
+                          <img src="./utils/images/logos/jquery.png" alt="logo JQuery" title="JQuery">                         
+                        </p>
+                        <p class="text-justify">
+                          <hr>
+                          <h5>SOURCES</h5>
+                          <a href="https://github.com/agzsoftsi/holberton-headphones/" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fab fa-github sources" title="GitHub"></i></a>
+                          <a href="https://agzsoftsi.github.io/holberton-headphones/" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fas fa-play-circle sources" title="Play Game"></i>  </a>
+                        </p>
+                        <div class="embed-responsive embed-responsive-16by9 mt-3">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/IhgnVNk1SiM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                   <!-- Card 6 -->
+                   <div data-category="Web Clones" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference rounded">
+                      <a href="#"><img src="./utils/images/games/introsmile.jpg" alt="" class="img-fluid"/>
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">SmileSchool</h3>
+                            <p>Web UI/UX SmileSchool project.</p>
+                          </div>
+                        </div>
+                      </a>
+                      <div data-images="./utils/images/games/asc4.jpg, ./utils/images/games/bsc4.jpg, ./utils/images/games/csc4.jpg, ./utils/images/games/dsc4.jpg" class="sr-only reference-description">
+                        <p class="text-justify">
+                          In this project, you will implement from scratch, with bootstrap, a web page. HTML, CSS, Javascript, Accessibility, Responsive design knowledges that you learned previously.
+                        </p>
+                        <p class="text-justify">
+                          <hr>
+                          <h5>FEATURES</h5>
+                          <ul class="text-left">
+                            <li>UI/UX Design on Figma.</li>
+                            <li>Web design with Bootstrap</li>
+                            <li>Accessibility standards implemented.</li>
+                            <li>Full responsive.</li>
+                            <li>Support for Google Chrome, Firefox, Microsoft Edge.</li>
+                          </ul>
+                        </p>
+                        <p class="text-justify">
+                          <hr>
+                          <h5>TECHNOLOGIES</h5>
+                          <img src="./utils/images/logos/figma.png" alt="logo Figma" title="Figma"> 
+                          <img src="./utils/images/logos/html.png" alt="logo HTML5" title="HTML5">   
+                          <img src="./utils/images/logos/css.png" alt="logo CSS" title="CSS">
+                          <img src="./utils/images/logos/bootstrap.png" alt="logo Bootstrap" title="Bootstrap">
+                          <img src="./utils/images/logos/sass.png" alt="logo Sass" title="SASS">
+                          <img src="./utils/images/logos/js.png" alt="logo JavaScript" title="JavaScript"> 
+                          <img src="./utils/images/logos/jquery.png" alt="logo JQuery" title="JQuery">                         
+                        </p>
+                        <p class="text-justify">
+                          <hr>
+                          <h5>SOURCES</h5>
+                          <a href="https://github.com/agzsoftsi/holberton-smiling-school-javascript" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fab fa-github sources" title="GitHub"></i></a>
+                          <a href="https://agzsoftsi.github.io/holberton-smiling-school-javascript/homepage.html" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fas fa-play-circle sources" title="Play Game"></i>  </a>
+                        </p>
+                        <div class="embed-responsive embed-responsive-16by9 mt-3">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/PBvNlft9ewQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                     <!-- Card 7 -->
+                     <div data-category="Web Development" class="reference-item col-lg-3 col-md-6">
+                      <div class="reference rounded">
+                        <a href="#"><img src="./utils/images/games/introAutomatict.jpg" alt="" class="img-fluid"/>
+                          <div class="overlay">
+                            <div class="inner">
+                              <h3 class="h4 reference-title">Automatic Translations</h3>
+                              <p>Generate translations for transcripts your videos into many languages automatically.</p>
+                            </div>
+                          </div>
+                        </a>
+                        <div data-images="./utils/images/games/asc5.jpg, ./utils/images/games/bsc5.jpg, ./utils/images/games/csc5.jpg, ./utils/images/games/dsc5.jpg" class="sr-only reference-description">
+                          <p class="text-justify">
+                            Generate translations for transcripts your videos into many languages automatically, using the power of AWS Cloud Computing technologies (Amazon Web Services) you can enjoy in your favorite language and with the control of each time section the content of the video . A perfect way to avoid missing relevant data from your multimedia content.
+
+                          </p>
+                          <p class="text-justify">
+                            The main objective of the project is to generate the translation of an existing transcription, which belongs to a video course on the Skillshare.com platform, by default the transcription is in the original language of the video (English), but will give the user the option to select a language and automatically generate the translation for transcription. And with this same transcript you can navigate between the subtitles and tracks of the video.
+                            
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>FEATURES</h5>
+                            <ul class="text-left">
+                              <li>Translations: Translate the Video Transcriptions faster and automatically to many languages, just one click.</li>
+                              <li>Video tracker: Manage the video through its text tracks (subtitles) and take the play control which is playing or not</li>
+                              <li>Presentation: Change the presentation of the Transcription for you reading mode easier. Subtitles or Paragraphs</li>
+                              <li>Manage subtitles translated for each one video</li>
+                              <li>Full responsive.</li>
+                              <li>Support for Google Chrome, Firefox, Microsoft Edge.</li>
+                            </ul>
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>TECHNOLOGIES</h5>
+                            <img src="./utils/images/logos/html.png" alt="logo HTML5" title="HTML5">   
+                            <img src="./utils/images/logos/css.png" alt="logo CSS" title="CSS">
+                            <img src="./utils/images/logos/bootstrap.png" alt="logo Bootstrap" title="Bootstrap">
+                            <img src="./utils/images/logos/js.png" alt="logo JavaScript" title="JavaScript">
+                            <img src="./utils/images/logos/python.png" alt="logo Python" title="Python"> 
+                            <img src="./utils/images/logos/awscloudfront.png" alt="logo Aws Cloudfront" title="Cloudfront">
+                            <img src="./utils/images/logos/awss3.png" alt="logo Aws S3" title="S3">     
+                            <img src="./utils/images/logos/awslambda.png" alt="logo Aws Lambda" title="Lambda">     
+                            <img src="./utils/images/logos/awsapi.png" alt="logo Aws API Gateway" title="API Gateway">   
+                            <img src="./utils/images/logos/awsIAM.png" alt="logo Aws IAM" title="API IAM">                              
+                            <img src="./utils/images/logos/awstranscribe.png" alt="logo Aws Transcribe" title="Transcribe">
+                            <img src="./utils/images/logos/awstranslate.png" alt="logo Aws Translate" title="Translate">
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>SOURCES</h5>
+                            <a href="https://github.com/agzsoftsi/Automatic_Translations" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fab fa-github sources" title="GitHub"></i></a>
+                            <a href="https://agzsoftsi.github.io/Automatic_Translations/" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fas fa-play-circle sources" title="Landing Page"></i>  </a>
+                            
+                          </p>
+                          <div class="embed-responsive embed-responsive-16by9 mt-3">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/8R6BWhoAlfU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                     <!-- Card 9 -->
+                     <div data-category="Web Development" class="reference-item col-lg-3 col-md-6">
+                      <div class="reference rounded">
+                        <a href="#"><img src="./utils/images/games/introTasklist.jpg" alt="" class="img-fluid"/>
+                          <div class="overlay">
+                            <div class="inner">
+                              <h3 class="h4 reference-title">Task list V1.0</h3>
+                              <p>Basic App to manage Tasks (create, delete, monitoring).</p>
+                            </div>
+                          </div>
+                        </a>
+                        <div data-images="./utils/images/games/asc6.jpg, ./utils/images/games/bsc6.jpg, ./utils/images/games/csc6.jpg, ./utils/images/games/dsc6.jpg" class="sr-only reference-description">
+                          <p class="text-justify">
+                            Basic App to manage Tasks (create, delete, monitoring).
+
+                          </p>
+                           <p class="text-justify">
+                            <hr>
+                            <h5>FEATURES</h5>
+                            <ul class="text-left">
+                              <li>Working on web and android like an App</li>
+                              <li>Create Task function.</li>
+                              <li>Delete Task function.</li>
+                              <li>Restart the Task manager.</li>
+                              <li>Full responsive.</li>
+                              <li>Check monitoring for count of tasks and complete Tasks.</li>
+                              <li>Change a basic theme (light: by Default, dark).</li>
+                              <li>Support for Google Chrome, Firefox, Microsoft Edge.</li>
+                            </ul>
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>TECHNOLOGIES</h5>
+                            <img src="./utils/images/logos/html.png" alt="logo HTML5" title="HTML5">   
+                            <img src="./utils/images/logos/css.png" alt="logo CSS" title="CSS">
+                            <img src="./utils/images/logos/bootstrap.png" alt="logo Bootstrap" title="Bootstrap">
+                            <img src="./utils/images/logos/js.png" alt="logo JavaScript" title="JavaScript"> 
+                            <img src="./utils/images/logos/jquery.png" alt="logo JQuery" title="JQuery">                         
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>SOURCES</h5>
+                            <a href="https://github.com/agzsoftsi/Task-List" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fab fa-github sources" title="GitHub"></i></a>
+                            <a href="https://agzsoftsi.github.io/Task-List/" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fas fa-play-circle sources" title="Play Game"></i>  </a>
+                          </p>
+                          <div class="embed-responsive embed-responsive-16by9 mt-3">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2xLfqu4DCQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- Card 10 -->
+                    <div data-category="Web Development" class="reference-item col-lg-3 col-md-6">
+                      <div class="reference rounded">
+                        <a href="#"><img src="./utils/images/games/introTellme.jpg" alt="" class="img-fluid"/>
+                          <div class="overlay">
+                            <div class="inner">
+                              <h3 class="h4 reference-title">Tell me! V1.0</h3>
+                              <p>Tell me! App is a Simple text to speech converter that can help you to Tell that you want.</p>
+                            </div>
+                          </div>
+                        </a>
+                        <div data-images="./utils/images/games/asc7.jpg, ./utils/images/games/bsc7.jpg, ./utils/images/games/csc7.jpg, ./utils/images/games/dsc7.jpg" class="sr-only reference-description">
+                          <p class="text-justify">
+                            Tell me! App is a Simple text to speech converter using Web API SpeechSynthesisUtterance that can help you to Tell that you want.
+
+                          </p>
+                      
+                          <p class="text-justify">
+                            <hr>
+                            <h5>FEATURES</h5>
+                            <ul class="text-left">
+                              <li>Support Languages(Google Chrome 21 / Firefox 2).</li>
+                              <li>16 Avatars for each language</li>
+                              <li>Automatic language changer</li>
+                              <li>Full responsive.</li>
+                              <li>Change a basic theme (light: by Default, dark).</li>
+                              <li>Restart App function.</li>
+                            </ul>
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>TECHNOLOGIES</h5>
+                            <img src="./utils/images/logos/html.png" alt="logo HTML5" title="HTML5">   
+                            <img src="./utils/images/logos/css.png" alt="logo CSS" title="CSS">
+                            <img src="./utils/images/logos/bootstrap.png" alt="logo Bootstrap" title="Bootstrap">
+                            <img src="./utils/images/logos/js.png" alt="logo JavaScript" title="JavaScript"> 
+                            <img src="./utils/images/logos/jquery.png" alt="logo JQuery" title="JQuery">
+                            <img src="./utils/images/logos/speech.png" alt="logo SpeechSynthesisUtterance" title="SpeechSynthesisUtterance">                       
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>SOURCES</h5>
+                            <a href="https://github.com/agzsoftsi/Tell-me" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fab fa-github sources" title="GitHub"></i></a>
+                            <a href="https://agzsoftsi.github.io/Tell-me/index.html" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fas fa-play-circle sources" title="Play Game"></i>  </a>
+                          </p>
+                          <div class="embed-responsive embed-responsive-16by9 mt-3">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/DfFbCRuz5oM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                     <!-- Card 11 -->
+                     <div data-category="Web Development" class="reference-item col-lg-3 col-md-6">
+                      <div class="reference rounded">
+                        <a href="#"><img src="./utils/images/games/introphrase.jpg" alt="" class="img-fluid"/>
+                          <div class="overlay">
+                            <div class="inner">
+                              <h3 class="h4 reference-title">Phrase Generator V1.0</h3>
+                              <p>Phrase generator App is a Simple tool to create phrases in images that you can personalize, download and share.</p>
+                            </div>
+                          </div>
+                        </a>
+                        <div data-images="./utils/images/games/asc8.jpg, ./utils/images/games/bsc8.jpg, ./utils/images/games/csc8.jpg" class="sr-only reference-description">
+                          <p class="text-justify">
+                            Phrase generator App is a Simple tool to create phrases in images using the web API Cnavas and that you can personalize, download and share.
+
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>FEATURES</h5>
+                            <ul class="text-left">
+                              <li>Working on web and android like an App.</li>
+                              <li>support 10 types of fonts</li>
+                              <li>Preview generated Phrase.</li>
+                              <li>Full responsive.</li>
+                              <li>Download function working.</li>
+                              <li>Restart App function.</li>
+                              <li>Change a basic theme (light: by Default, dark).</li>
+                              <li>Support for Google Chrome, Firefox, Microsoft Edge.</li>
+                            </ul>
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>TECHNOLOGIES</h5>
+                            <img src="./utils/images/logos/html.png" alt="logo HTML5" title="HTML5">   
+                            <img src="./utils/images/logos/css.png" alt="logo CSS" title="CSS">
+                            <img src="./utils/images/logos/bootstrap.png" alt="logo Bootstrap" title="Bootstrap">
+                            <img src="./utils/images/logos/js.png" alt="logo JavaScript" title="JavaScript"> 
+                            <img src="./utils/images/logos/canvas.png" alt="logo Canvas" title="Canvas">                         
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>SOURCES</h5>
+                            <a href="https://github.com/agzsoftsi/Phrase-Gen" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fab fa-github sources" title="GitHub"></i></a>
+                            <a href="https://agzsoftsi.github.io/Phrase-Gen/index.html" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fas fa-play-circle sources" title="Play Game"></i>  </a>
+                          </p>
+                          <div class="embed-responsive embed-responsive-16by9 mt-3">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/vMhUC1angr0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                     <!-- Card 12 -->
+                     <div data-category="Web Development" class="reference-item col-lg-3 col-md-6">
+                      <div class="reference rounded">
+                        <a href="#"><img src="./utils/images/games/introjQuizz.jpg" alt="" class="img-fluid"/>
+                          <div class="overlay">
+                            <div class="inner">
+                              <h3 class="h4 reference-title">JSQuizz</h3>
+                              <p>JSquizz App is a basic WebApp to testing your knowledge about the JavaScript basics, earn Badges and learn.</p>
+                            </div>
+                          </div>
+                        </a>
+                        <div data-images="./utils/images/games/asc9.jpg, ./utils/images/games/bsc9.jpg, ./utils/images/games/csc9.jpg, ./utils/images/games/dsc9.jpg, ./utils/images/games/esc9.jpg, ./utils/images/games/fsc9.jpg" class="sr-only reference-description">
+                          <p class="text-justify">
+                            JSquizz App is a basic WebApp to testing your knowledge about the JavaScript basics, earn Badges , share on twitter and learn.
+                            It's a funny way to improve your JavaScript skills.
+
+                          </p>
+                        
+                          <p class="text-justify">
+                            <hr>
+                            <h5>FEATURES</h5>
+                            <ul class="text-left">
+                              <li>Working on web and android like an App.</li>
+                              <li>3 levels implemented (Bronze, Silver, Gold)</li>
+                              <li>3 badges created to share on twitter.</li>
+                              <li>15 random questions for level 1.</li>
+                              <li>25 random questions for level 2.</li>
+                              <li>45 random questions for level 3.</li>
+                              <li>Questions, answers and checker tested.</li>
+                              <li>Restart App function.</li>
+                              <li>Timer implemented.</li>
+                              <li>Support for Google Chrome, Firefox, Microsoft Edge.</li>
+                            </ul>
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>TECHNOLOGIES</h5>
+                            <img src="./utils/images/logos/html.png" alt="logo HTML5" title="HTML5">   
+                            <img src="./utils/images/logos/css.png" alt="logo CSS" title="CSS">
+                            <img src="./utils/images/logos/bootstrap.png" alt="logo Bootstrap" title="Bootstrap">
+                            <img src="./utils/images/logos/js.png" alt="logo JavaScript" title="JavaScript"> 
+                                                    
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>SOURCES</h5>
+                            <a href="https://github.com/agzsoftsi/JSQuizz/" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fab fa-github sources" title="GitHub"></i></a>
+                            <a href="https://agzsoftsi.github.io/JSQuizz/" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fas fa-play-circle sources" title="Play Game"></i>  </a>
+                          </p>
+                          <div class="embed-responsive embed-responsive-16by9 mt-3">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ErPMKkTzxQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                     <!-- Card 13 -->
+                     <div data-category="Web Development" class="reference-item col-lg-3 col-md-6">
+                      <div class="reference rounded">
+                        <a href="#"><img src="./utils/images/games/introAvatar.jpg" alt="" class="img-fluid"/>
+                          <div class="overlay">
+                            <div class="inner">
+                              <h3 class="h4 reference-title">Avatar Gen v1.0</h3>
+                              <p>Avatar generator App is a Simple tool to create custom avatars.</p>
+                            </div>
+                          </div>
+                        </a>
+                        <div data-images="./utils/images/games/asc10.jpg, ./utils/images/games/bsc10.jpg, ./utils/images/games/csc10.jpg, ./utils/images/games/dsc10.jpg, ./utils/images/games/esc10.jpg" class="sr-only reference-description">
+                          <p class="text-justify">
+                            Avatar generator App is a Simple tool to create custom avatars with at least 500 kinds of combinations using the power of Web API Canva, only create, download and share.
+
+                          </p>
+                          
+                          <p class="text-justify">
+                            <hr>
+                            <h5>FEATURES</h5>
+                            <ul class="text-left">
+                              <li>More of 500 kinds of combinations.</li>
+                              <li>Working on web and android like an App</li>
+                              <li>Generate Panel with Genders (2), Backgrounds (10), Avatar Name, Foreground (10), Skin Colors(6), Eyesbrows (6) - Color (10), Eyes(13) - Color(10), Mouth(13),
+                                Hair(28) - Color(10), Beard(10)- Color(10), Accessories (10), Shirts(11) - Color(9), Prints (40), Pants(10) - Color(9), Shoes(6) - Color(6)</li>
+                              <li>Preview generated Avatar.</li>
+                              <li>Full responsive.</li>
+                              <li>Download Avatar function working</li>
+                              <li>Restart App function</li>
+                              <li>Support for Google Chrome, Firefox, Microsoft Edge.</li>
+                            </ul>
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>TECHNOLOGIES</h5>
+                            <img src="./utils/images/logos/html.png" alt="logo HTML5" title="HTML5">   
+                            <img src="./utils/images/logos/css.png" alt="logo CSS" title="CSS">
+                            <img src="./utils/images/logos/bootstrap.png" alt="logo Bootstrap" title="Bootstrap">
+                            <img src="./utils/images/logos/js.png" alt="logo JavaScript" title="JavaScript"> 
+                            <img src="./utils/images/logos/jquery.png" alt="logo JQuery" title="JQuery">
+                            <img src="./utils/images/logos/canvas.png" alt="logo Canvas" title="Canvas">                           
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>SOURCES</h5>
+                            <a href="https://github.com/agzsoftsi/Avatar-Gen" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fab fa-github sources" title="GitHub"></i></a>
+                            <a href="https://agzsoftsi.github.io/Avatar-Gen/" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fas fa-play-circle sources" title="Play Game"></i>  </a>
+                          </p>
+                          <div class="embed-responsive embed-responsive-16by9 mt-3">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Q5rQxzfFVm0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                                       <!-- Card 14 -->
+                                       <div data-category="Web Development" class="reference-item col-lg-3 col-md-6">
+                                        <div class="reference rounded">
+                                          <a href="#"><img src="./utils/images/games/introsKarlostation.gif" alt="" class="img-fluid"/>
+                                            <div class="overlay">
+                                              <div class="inner">
+                                                <h3 class="h4 reference-title">KarloStation v1.0</h3>
+                                                <p>Regular Console UI with a classic game Snake..</p>
+                                              </div>
+                                            </div>
+                                          </a>
+                                          <div data-images="./utils/images/games/asc11.jpg, ./utils/images/games/bsc11.jpg, ./utils/images/games/csc11.jpg, ./utils/images/games/dsc11.jpg, ./utils/images/games/esc11.jpg, ./utils/images/games/fsc11.jpg" class="sr-only reference-description">
+                                            <p class="text-justify">
+                                              Regular Console UI with a classic game Snake, Play, Win, and enjoy passing all difficulty levels and become in the Best.
+                  
+                                            </p>
+                                   
+                                            <p class="text-justify">
+                                              <hr>
+                                              <h5>FEATURES</h5>
+                                              <ul class="text-left">
+                                                <li>UI Disign Console.</li>
+                                                <li>Responsive</li>
+                                                <li>3 difficulty levels.</li>
+                                                <li>Win and Lose implemented.</li>
+                                                <li>Skin Selector.</li>
+                                                <li>Score View</li>
+                                                <li>Restart Console</li>
+                                                <li>Keyboard and Push buttons implemented</li>
+                                              </ul>
+                                            </p>
+                                            <p class="text-justify">
+                                              <hr>
+                                              <h5>TECHNOLOGIES</h5>
+                                              <img src="./utils/images/logos/html.png" alt="logo HTML5" title="HTML5">   
+                                              <img src="./utils/images/logos/css.png" alt="logo CSS" title="CSS">
+                                              <img src="./utils/images/logos/bootstrap.png" alt="logo Bootstrap" title="Bootstrap">
+                                              <img src="./utils/images/logos/js.png" alt="logo JavaScript" title="JavaScript"> 
+                                              <img src="./utils/images/logos/jquery.png" alt="logo JQuery" title="JQuery">
+                                              <img src="./utils/images/logos/canvas.png" alt="logo Canvas" title="Canvas">                          
+                                            </p>
+                                            <p class="text-justify">
+                                              <hr>
+                                              <h5>SOURCES</h5>
+                                              <a href="https://github.com/agzsoftsi/KarloStation" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fab fa-github sources" title="GitHub"></i></a>
+                                              <a href="https://agzsoftsi.github.io/KarloStation/index.html" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fas fa-play-circle sources" title="Play Game"></i>  </a>
+                                            </p>
+                                            <div class="embed-responsive embed-responsive-16by9 mt-3">
+                                              <iframe width="560" height="315" src="https://www.youtube.com/embed/IhgnVNk1SiM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+                                                         <!-- Card 15 -->
+                     <div data-category="Web Development" class="reference-item col-lg-3 col-md-6">
+                      <div class="reference rounded">
+                        <a href="#"><img src="./utils/images/games/introAvatar.jpg" alt="" class="img-fluid"/>
+                          <div class="overlay">
+                            <div class="inner">
+                              <h3 class="h4 reference-title">Twitter Clone v1.0</h3>
+                              <p>Avatar generator App is a Simple tool to create custom avatars.</p>
+                            </div>
+                          </div>
+                        </a>
+                        <div data-images="./utils/images/games/asc4.jpg, ./utils/images/games/bsc4.jpg, ./utils/images/games/csc4.jpg, ./utils/images/games/dsc4.jpg" class="sr-only reference-description">
+                          <p class="text-justify">
+                            Generate translations for transcripts your videos into many languages automatically, using the power of AWS Cloud Computing technologies (Amazon Web Services) you can enjoy in your favorite language and with the control of each time section the content of the video . A perfect way to avoid missing relevant data from your multimedia content.
+
+                          </p>
+                          <p class="text-justify">
+                            The main objective of the project is to generate the translation of an existing transcription, which belongs to a video course on the Skillshare.com platform, by default the transcription is in the original language of the video (English), but will give the user the option to select a language and automatically generate the translation for transcription. And with this same transcript you can navigate between the subtitles and tracks of the video.
+                            
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>FEATURES</h5>
+                            <ul class="text-left">
+                              <li>UI/UX Design on Figma.</li>
+                              <li>Web design with Bootstrap</li>
+                              <li>Accessibility standards implemented.</li>
+                              <li>Full responsive.</li>
+                              <li>Support for Google Chrome, Firefox, Microsoft Edge.</li>
+                            </ul>
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>TECHNOLOGIES</h5>
+                            <img src="./utils/images/logos/html.png" alt="logo HTML5" title="HTML5">   
+                            <img src="./utils/images/logos/css.png" alt="logo CSS" title="CSS">
+                            <img src="./utils/images/logos/bootstrap.png" alt="logo Bootstrap" title="Bootstrap">
+                            <img src="./utils/images/logos/js.png" alt="logo JavaScript" title="JavaScript"> 
+                            <img src="./utils/images/logos/jquery.png" alt="logo JQuery" title="JQuery">                         
+                          </p>
+                          <p class="text-justify">
+                            <hr>
+                            <h5>SOURCES</h5>
+                            <a href="https://github.com/agzsoftsi/holberton-smiling-school-javascript" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fab fa-github sources" title="GitHub"></i></a>
+                            <a href="https://agzsoftsi.github.io/holberton-smiling-school-javascript/homepage.html" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fas fa-play-circle sources" title="Play Game"></i>  </a>
+                          </p>
+                          <div class="embed-responsive embed-responsive-16by9 mt-3">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/IhgnVNk1SiM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                                                        <!-- Card 16 -->
+                                                        <div data-category="Web Development" class="reference-item col-lg-3 col-md-6">
+                                                          <div class="reference rounded">
+                                                            <a href="#"><img src="./utils/images/games/introAvatar.jpg" alt="" class="img-fluid"/>
+                                                              <div class="overlay">
+                                                                <div class="inner">
+                                                                  <h3 class="h4 reference-title">VideoKarl v1.0</h3>
+                                                                  <p>Avatar generator App is a Simple tool to create custom avatars.</p>
+                                                                </div>
+                                                              </div>
+                                                            </a>
+                                                            <div data-images="./utils/images/games/asc4.jpg, ./utils/images/games/bsc4.jpg, ./utils/images/games/csc4.jpg, ./utils/images/games/dsc4.jpg" class="sr-only reference-description">
+                                                              <p class="text-justify">
+                                                                Generate translations for transcripts your videos into many languages automatically, using the power of AWS Cloud Computing technologies (Amazon Web Services) you can enjoy in your favorite language and with the control of each time section the content of the video . A perfect way to avoid missing relevant data from your multimedia content.
+                                    
+                                                              </p>
+                                                              <p class="text-justify">
+                                                                The main objective of the project is to generate the translation of an existing transcription, which belongs to a video course on the Skillshare.com platform, by default the transcription is in the original language of the video (English), but will give the user the option to select a language and automatically generate the translation for transcription. And with this same transcript you can navigate between the subtitles and tracks of the video.
+                                                                
+                                                              </p>
+                                                              <p class="text-justify">
+                                                                <hr>
+                                                                <h5>FEATURES</h5>
+                                                                <ul class="text-left">
+                                                                  <li>UI/UX Design on Figma.</li>
+                                                                  <li>Web design with Bootstrap</li>
+                                                                  <li>Accessibility standards implemented.</li>
+                                                                  <li>Full responsive.</li>
+                                                                  <li>Support for Google Chrome, Firefox, Microsoft Edge.</li>
+                                                                </ul>
+                                                              </p>
+                                                              <p class="text-justify">
+                                                                <hr>
+                                                                <h5>TECHNOLOGIES</h5>
+                                                                <img src="./utils/images/logos/html.png" alt="logo HTML5" title="HTML5">   
+                                                                <img src="./utils/images/logos/css.png" alt="logo CSS" title="CSS">
+                                                                <img src="./utils/images/logos/bootstrap.png" alt="logo Bootstrap" title="Bootstrap">
+                                                                <img src="./utils/images/logos/js.png" alt="logo JavaScript" title="JavaScript"> 
+                                                                <img src="./utils/images/logos/jquery.png" alt="logo JQuery" title="JQuery">                         
+                                                              </p>
+                                                              <p class="text-justify">
+                                                                <hr>
+                                                                <h5>SOURCES</h5>
+                                                                <a href="https://github.com/agzsoftsi/holberton-smiling-school-javascript" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fab fa-github sources" title="GitHub"></i></a>
+                                                                <a href="https://agzsoftsi.github.io/holberton-smiling-school-javascript/homepage.html" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fas fa-play-circle sources" title="Play Game"></i>  </a>
+                                                              </p>
+                                                              <div class="embed-responsive embed-responsive-16by9 mt-3">
+                                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/IhgnVNk1SiM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+
+                                                      <!-- Card 17 -->
+                                                      <div data-category="Web Development" class="reference-item col-lg-3 col-md-6">
+                                                        <div class="reference rounded">
+                                                          <a href="#"><img src="./utils/images/games/introAvatar.jpg" alt="" class="img-fluid"/>
+                                                            <div class="overlay">
+                                                              <div class="inner">
+                                                                <h3 class="h4 reference-title">KarlChat v1.0</h3>
+                                                                <p>Avatar generator App is a Simple tool to create custom avatars.</p>
+                                                              </div>
+                                                            </div>
+                                                          </a>
+                                                          <div data-images="./utils/images/games/asc4.jpg, ./utils/images/games/bsc4.jpg, ./utils/images/games/csc4.jpg, ./utils/images/games/dsc4.jpg" class="sr-only reference-description">
+                                                            <p class="text-justify">
+                                                              Generate translations for transcripts your videos into many languages automatically, using the power of AWS Cloud Computing technologies (Amazon Web Services) you can enjoy in your favorite language and with the control of each time section the content of the video . A perfect way to avoid missing relevant data from your multimedia content.
+                                  
+                                                            </p>
+                                                            <p class="text-justify">
+                                                              The main objective of the project is to generate the translation of an existing transcription, which belongs to a video course on the Skillshare.com platform, by default the transcription is in the original language of the video (English), but will give the user the option to select a language and automatically generate the translation for transcription. And with this same transcript you can navigate between the subtitles and tracks of the video.
+                                                              
+                                                            </p>
+                                                            <p class="text-justify">
+                                                              <hr>
+                                                              <h5>FEATURES</h5>
+                                                              <ul class="text-left">
+                                                                <li>UI/UX Design on Figma.</li>
+                                                                <li>Web design with Bootstrap</li>
+                                                                <li>Accessibility standards implemented.</li>
+                                                                <li>Full responsive.</li>
+                                                                <li>Support for Google Chrome, Firefox, Microsoft Edge.</li>
+                                                              </ul>
+                                                            </p>
+                                                            <p class="text-justify">
+                                                              <hr>
+                                                              <h5>TECHNOLOGIES</h5>
+                                                              <img src="./utils/images/logos/html.png" alt="logo HTML5" title="HTML5">   
+                                                              <img src="./utils/images/logos/css.png" alt="logo CSS" title="CSS">
+                                                              <img src="./utils/images/logos/bootstrap.png" alt="logo Bootstrap" title="Bootstrap">
+                                                              <img src="./utils/images/logos/js.png" alt="logo JavaScript" title="JavaScript"> 
+                                                              <img src="./utils/images/logos/jquery.png" alt="logo JQuery" title="JQuery">                         
+                                                            </p>
+                                                            <p class="text-justify">
+                                                              <hr>
+                                                              <h5>SOURCES</h5>
+                                                              <a href="https://github.com/agzsoftsi/holberton-smiling-school-javascript" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fab fa-github sources" title="GitHub"></i></a>
+                                                              <a href="https://agzsoftsi.github.io/holberton-smiling-school-javascript/homepage.html" target="_blank" rel="noopener noreferrer" class="linksource"><i class="fas fa-play-circle sources" title="Play Game"></i>  </a>
+                                                            </p>
+                                                            <div class="embed-responsive embed-responsive-16by9 mt-3">
+                                                              <iframe width="560" height="315" src="https://www.youtube.com/embed/IhgnVNk1SiM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+
+
+
+
+
+
+                    
+             
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact-->
+    <footer class="main-footer bg-gradient">
+      <div class="container">
+        <div id="contact">
+          <header class="text-center">
+            <h2 class="title title_contact">Let's talk!</h2>
+          </header>
+          <div class="col-lg-5 col-md-8 mx-auto mt-2">
+            <p class="text-white text-center mb-4 contact_m_footer">
+              I would like to help you achieve your goals, so tell me your
+              problems and let's solve them together.
+            </p>
+            <p class="mb-4 ml-3">
+              <span class="text-white icon_space"
+                ><i class="far fa-envelope"></i
+              ></span>
+              <span class="text-white info-icono"
+                >agzsoftsi@gmail.com</span
+              >
+            </p>
+            <p class="mb-4 ml-3">
+              <span class="text-white icono icon_space"
+                ><i class="fas fa-mobile-alt"></i
+              ></span>
+              <span class="text-white info-icono">+57 3167308713</span>
+            </p>
+            <p class="mb-4 ml-3">
+              <span class="text-white icono icon_space"
+                ><i class="fas fa-map-marker-alt"></i
+              ></span>
+              <span class="text-white info-icono">Cali, Colombia</span>
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center footer_space">
+          <div class="text-center text-lg-center">
+            <p class="social">
+              <a
+                href="https://www.linkedin.com/in/karlgarmor/"
+                subject="LinkedIn icon"
+                target="_blank"
+                class="external facebook wow fadeInUp"
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/agzsoftsi"
+                subject="GitHub icon"
+                target="_blank"
+                data-wow-delay="0.2s"
+                class="external wow fadeInUp github_backg"
+                title="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://twitter.com/karlgarmor"
+                subject="Twitter icon"
+                target="_blank"
+                data-wow-delay="0.4s"
+                class="external wow fadeInUp twitter_backg"
+                title="Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                subject="CV icon"
+                data-wow-delay="0.6s"
+                target="_blank"
+                class="external wow fadeInUp gmail_backg"
+                title="Curriculum Vitae"
+              >
+                <i class="fa fa-briefcase"></i>
+              </a>
+              <a
+                href="mailto:agzsoftsi@gmail.com?"
+                subject="Email icon"
+                data-wow-delay="0.6s"
+                target="_blank"
+                class="external email wow fadeInUp"
+                title="Email"
+              >
+                <i class="fa fa-envelope"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="text-center text-lg-center mt-4 mt-lg-4">
+          <p>© 2021 Carlos Andres Garcia Morales. All rights reserved ®.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+
+    <script src="./utils/scripts/jquery.min.js"></script>
+    <script src="./utils/scripts/bootstrap.bundle.min.js"></script>
+    <script src="./utils/scripts/jquery.cookie.js"></script>
+    <script src="./utils/scripts/owl.carousel.min.js"></script>
+    <script src="./utils/scripts/jquery.waypoints.min.js"></script>
+    <script src="./utils/scripts/jquery.counterup.js"></script>
+    <script src="./utils/scripts/front.js"></script>
+    <script src="https://kit.fontawesome.com/a374482f1e.js" crossorigin="anonymous"></script>
+  </body>
 </html>
