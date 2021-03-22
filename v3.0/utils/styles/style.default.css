@@ -8,7 +8,9 @@
 }
 body {
   color: #555;
+  font-family: 'Raleway', sans-serif !important;
 }
+
 p {
   color: #555;
 }
@@ -49,6 +51,12 @@ section {
   color: #555;
   margin-top: 20px;
   letter-spacing: 0;
+  font-family: 'Raleway', sans-serif;
+  
+}
+
+.title2{
+  font-family: 'Raleway', sans-serif;
 }
 .title span {
   font-size: 2.5rem;
@@ -88,7 +96,7 @@ section {
   
 }
 .intro-info .title3{
- 
+  font-family: 'Raleway', sans-serif;
   margin-bottom: 5px;
 }
 
@@ -98,9 +106,8 @@ section {
 
 .bg-gray {
   /*background: #f5f5f5;*/
-  background: rgb(245, 245, 245);  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, rgb(255, 255, 255), #cfcfcf);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, rgb(255, 255, 255), #cfcfcf); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #f8f9fa
+
 
 }
 .dark-mask {
@@ -134,7 +141,7 @@ nav.navbar .navbar-brand {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 700;
-  font-family: "Roboto Slab", serif;
+ 
 }
 nav.navbar a.nav-link {
   text-transform: uppercase;
@@ -316,9 +323,10 @@ nav.navbar a.nav-link:hover {
   border-radius: 25px;
   border: solid 1px #fff;
 }
-.statistics-section h5 {
-  font-family: "Roboto", sans-serif;
+.text-slider-items {
+  display: none;
 }
+
 .statistics-section .counter {
   font-weight: 300;
   font-size: 2.5rem;
@@ -331,7 +339,7 @@ nav.navbar a.nav-link:hover {
 #filter li {
   display: inline-block;
   list-style-type: none;
-  font-family: "Roboto Slab", serif;
+  
   margin-bottom: 30px;
   border-top: solid 1px rgb(0, 183, 255);
   border-bottom: solid 1px rgb(0, 183, 255);
@@ -503,7 +511,7 @@ footer.main-footer p.social a.email {
 footer.main-footer p {
   margin: 0;
   color: #eee;
-  font-family: "Roboto Slab", serif;
+  
   font-size: 0.9rem;
 }
 footer.main-footer p.template-bootstrapious {
@@ -511,7 +519,7 @@ footer.main-footer p.template-bootstrapious {
   text-align: center;
   color: #eee;
   font-size: 0.9rem;
-  font-family: "Roboto", sans-serif;
+  
 }
 footer.main-footer p.template-bootstrapious a {
   color: #999;
@@ -1231,7 +1239,7 @@ footer.main-footer p.template-bootstrapious a {
   border-radius: 0rem;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1343,7 +1351,7 @@ mark,
 }
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #3aa18c !important;
+  color: rgb(0, 183, 255) !important;
 }
 .page-item:first-child .page-link {
   border-top-left-radius: 0.25rem;
@@ -1500,7 +1508,7 @@ button.bg-dark:focus {
   border-color: #343a40 !important;
 }
 .text-primary {
-  color: #4fbfa8 !important;
+  color: rgb(0, 183, 255) !important;
 }
 a.text-primary:hover,
 a.text-primary:focus {
