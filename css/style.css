@@ -827,7 +827,8 @@ a:hover {
 }
 
 .work-content .w-more .w-ctegory {
-  color: #0078ff;
+  
+  font-weight: 700;
 }
 
 .work-content .w-like {
@@ -924,8 +925,9 @@ a:hover {
   color: #fff;
   padding: 0 15px 5px;
   overflow: hidden;
-  background-color: #0078ff;
+  background-color: #0051B3;
   border-radius: 4px;
+  font-weight: 600;
 }
 
 .card-blog .card-category .category {
@@ -1322,7 +1324,7 @@ footer .credits a:visited {
   font-size: 15px;
 }
 .modal-body h6{
-  color: #0078ff;
+  color: blue;
   font-weight: 700;
 } 
 

@@ -1,0 +1,15 @@
+{
+    "name": "Karlgarmor | Website",
+    "short_name": "Karlgarmor",
+   
+    "icons": [
+        {
+            "src": "/img/projects/logo.png",
+            "sizes": "112x110",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
