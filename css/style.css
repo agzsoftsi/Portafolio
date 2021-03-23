@@ -901,6 +901,17 @@ a:hover {
   line-height: 1.6;
 }
 
+.testimonial-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-test{
+  width: fit-content;
+}
+
 /*======================================
 //--//-->   BLOG
 ======================================*/
