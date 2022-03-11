@@ -1,6 +1,6 @@
 /// The Enemies class
 /**
- * @author David Infante, Jose Ariza
+ * @author Carlos Garcia
  * 
  */
 
@@ -47,7 +47,7 @@ class Enemies {
     this.mat4 = Physijs.createMaterial(new THREE.MeshPhongMaterial ({map: diana}), 0, 0);
     
     var objetivo1 = new Physijs.BoxMesh (new THREE.BoxGeometry (7.5, 10, 2.5, 1, 1, 1), this.mat1, 1);
-    objetivo1.applyMatrix (new THREE.Matrix4().makeTranslation (100, 7, -150));
+    objetivo1.applyMatrix (new THREE.Matrix4().makeTranslation (100, -10, -150));
     objetivo1.receiveShadow = true;
     objetivo1.autoUpdateMatrix = false;
     this.countCollitions.push(0);
@@ -57,7 +57,7 @@ class Enemies {
     this.addBulletListener(this.enemies.length - 1);
 
     var objetivo2 = new Physijs.BoxMesh (new THREE.BoxGeometry (7.5, 10, 2.5, 1, 1, 1), this.mat2, 1);
-    objetivo2.applyMatrix (new THREE.Matrix4().makeTranslation (-100, 7, -250));
+    objetivo2.applyMatrix (new THREE.Matrix4().makeTranslation (-100, -10, -250));
     objetivo2.receiveShadow = true;
     objetivo2.autoUpdateMatrix = false;
     this.countCollitions.push(0);
@@ -67,7 +67,7 @@ class Enemies {
     this.addBulletListener(this.enemies.length - 1);
 
     var objetivo3 = new Physijs.BoxMesh (new THREE.BoxGeometry (7.5, 10, 2.5, 1, 1, 1), this.mat3, 1);
-    objetivo3.applyMatrix (new THREE.Matrix4().makeTranslation (100, 7, -350));
+    objetivo3.applyMatrix (new THREE.Matrix4().makeTranslation (100, -10, -350));
     objetivo3.receiveShadow = true;
     objetivo3.autoUpdateMatrix = false;
     this.countCollitions.push(0);
@@ -77,7 +77,7 @@ class Enemies {
     this.addBulletListener(this.enemies.length - 1);
 
     var objetivo4 = new Physijs.BoxMesh (new THREE.BoxGeometry (7.5, 10, 2.5, 1, 1, 1), this.mat4, 1);
-    objetivo4.applyMatrix (new THREE.Matrix4().makeTranslation (-100, 7, -450));
+    objetivo4.applyMatrix (new THREE.Matrix4().makeTranslation (-100, -10, -450));
     objetivo4.receiveShadow = true;
     objetivo4.autoUpdateMatrix = false;
     this.countCollitions.push(0);

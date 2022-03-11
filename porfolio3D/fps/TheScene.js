@@ -1,6 +1,6 @@
 /// The Model Facade class. The root node of the graph.
 /**
- * @author David Infante, Jose Ariza
+ * @author Carlos Garcia
  */
  
 class TheScene extends Physijs.Scene {
@@ -19,8 +19,8 @@ class TheScene extends Physijs.Scene {
     this.skybox = null;
     this.Bullets = null;
     this.index = 0;
-    this.maxBullets = 20;
-    this.actualAmmo = 40; //Balas totales antes de acabar el juego
+    this.maxBullets = 10;
+    this.actualAmmo = 10; //Balas totales antes de acabar el juego
     this.score = 0;
     this.lastScore = 0;
     this.level = 1;
@@ -28,9 +28,9 @@ class TheScene extends Physijs.Scene {
     this.createHUD();
 
     this.createAvatar();
-    this.avatar.loadWeapons();
+    // this.avatar.loadWeapons();
     this.place = this.createPlace();
-    this.createBullets();
+    // this.createBullets();
     this.createEnemies(this.level);
 
 
@@ -47,7 +47,7 @@ class TheScene extends Physijs.Scene {
     score.style.position = 'absolute';
     score.style.width = 1;
     score.style.height = 1;
-    score.innerHTML = "Puntuación: " + this.score;
+    // score.innerHTML = "Puntuación: " + this.score;
     score.style.top = 50 + 'px';
     score.style.left = 50 + 'px';
     score.style.fontSize = 50 + 'px';
@@ -59,7 +59,7 @@ class TheScene extends Physijs.Scene {
     ammo.style.position = 'absolute';
     ammo.style.width = 1;
     ammo.style.height = 1;
-    ammo.innerHTML = "Munición: " + this.actualAmmo;
+    // ammo.innerHTML = "Munición: " + this.actualAmmo;
     ammo.style.top = 100 + 'px';
     ammo.style.left = 50 + 'px';
     ammo.style.fontSize = 50 + 'px';
@@ -76,6 +76,7 @@ class TheScene extends Physijs.Scene {
     level.style.left = 50 + 'px';
     level.style.fontSize = 50 + 'px';
     level.style.color = "white";
+    level.style.display = "none";
     document.body.appendChild(level);
   }
 
@@ -113,6 +114,7 @@ class TheScene extends Physijs.Scene {
   }
 
   dispara() {
+    /*
     if(this.index >= this.maxBullets) {
       this.index = 0;
       this.bullets.reload();
@@ -122,7 +124,7 @@ class TheScene extends Physijs.Scene {
       this.index++;
       this.actualAmmo--;
       this.updateAmmo();
-    }
+    } */
   }
   
   /// It creates lights and adds them to the graph
@@ -228,9 +230,9 @@ class TheScene extends Physijs.Scene {
 
     this.enemies.animate();
 
-    if (this.actualAmmo == 0) {
+    /*if (this.actualAmmo == 0) {
       this.endGame();
-    }
+    }*/
   }
 
   changeWeapon() {
@@ -282,7 +284,7 @@ class TheScene extends Physijs.Scene {
     enableControls = true;
     controls.enabled = true;
     this.avatar.setInitialPosition();
-    this.actualAmmo = 40;
+    // this.actualAmmo = 40;
     this.updateAmmo();
     this.score = 0;
     this.updateScore(0);

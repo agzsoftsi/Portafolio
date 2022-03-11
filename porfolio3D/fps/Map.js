@@ -1,6 +1,6 @@
 /// The Map class
 /**
- * @author David Infante, Jose Ariza
+ * @author Carlos Garcia
  * 
  */
 
@@ -18,18 +18,25 @@ class Map {
     var mat = Physijs.createMaterial(new THREE.MeshPhongMaterial ({map: texturaMetal}),0,0);
     var matBase = Physijs.createMaterial(new THREE.MeshPhongMaterial ({map: texturaBase}),0,0);
     
-    var start1 = new Physijs.BoxMesh (new THREE.BoxGeometry (200, 0.0, 200, 1, 1, 1), mat, 0);
+    var start1 = new Physijs.BoxMesh (new THREE.BoxGeometry (620, 0.0, 630, 1, 1, 1), mat, 0);
     start1.applyMatrix (new THREE.Matrix4().makeTranslation (0, 0, 0));
     start1.receiveShadow = true;
     start1.autoUpdateMatrix = false;
     this.map.push(start1);
     ++this.map_size;
 
-    var enemies2 = new Physijs.BoxMesh (new THREE.BoxGeometry (210, 4, 400, 1, 1, 1), mat, 0);
+    var enemies2 = new Physijs.BoxMesh (new THREE.BoxGeometry (210, 2, 400, 1, 1, 1), mat, 0);
     enemies2.applyMatrix (new THREE.Matrix4().makeTranslation (0, 0, -300));
     enemies2.receiveShadow = true;
     enemies2.autoUpdateMatrix = false;
     this.map.push(enemies2);
+    ++this.map_size;
+
+    var enemies3 = new Physijs.BoxMesh (new THREE.BoxGeometry (210, 2, 200, 1, 1, 1), mat, 0);
+    enemies3.applyMatrix (new THREE.Matrix4().makeTranslation (0, 0, 220));
+    enemies3.receiveShadow = true;
+    enemies3.autoUpdateMatrix = false;
+    this.map.push(enemies3);
     ++this.map_size;
 
     var bullets3 = new Physijs.BoxMesh (new THREE.BoxGeometry (50, 0.0, 50, 1, 1, 1), mat, 0);
@@ -39,29 +46,29 @@ class Map {
     this.map.push(bullets3);
     ++this.map_size;
 
-    var fenceS4 = new Physijs.BoxMesh (new THREE.BoxGeometry (220, 8, 20, 1, 1, 1), mat, 0);
-    fenceS4.applyMatrix (new THREE.Matrix4().makeTranslation (0, 2.5, 100));
+    var fenceS4 = new Physijs.BoxMesh (new THREE.BoxGeometry (620, 100, 20, 1, 1, 1), mat, 0);
+    fenceS4.applyMatrix (new THREE.Matrix4().makeTranslation (0, 2.5, 320));
     fenceS4.receiveShadow = true;
     fenceS4.autoUpdateMatrix = false;
     this.map.push(fenceS4);
     ++this.map_size;
 
-    var fenceE5 = new Physijs.BoxMesh (new THREE.BoxGeometry (20, 8, 200, 1, 1, 1), mat, 0);
-    fenceE5.applyMatrix (new THREE.Matrix4().makeTranslation (100, 2.5, 0));
+    var fenceE5 = new Physijs.BoxMesh (new THREE.BoxGeometry (20, 100, 650, 1, 1, 1), mat, 0);
+    fenceE5.applyMatrix (new THREE.Matrix4().makeTranslation (320, 2.5, 0));
     fenceE5.receiveShadow = true;
     fenceE5.autoUpdateMatrix = false;
     this.map.push(fenceE5);
     ++this.map_size;
 
-    var fenceW6 = new Physijs.BoxMesh (new THREE.BoxGeometry (20, 8, 200, 1, 1, 1), mat, 0);
-    fenceW6.applyMatrix (new THREE.Matrix4().makeTranslation (-100, 2.5, 0));
+    var fenceW6 = new Physijs.BoxMesh (new THREE.BoxGeometry (20, 100, 650, 1, 1, 1), mat, 0);
+    fenceW6.applyMatrix (new THREE.Matrix4().makeTranslation (-320, 2.5, 0));
     fenceW6.receiveShadow = true;
     fenceW6.autoUpdateMatrix = false;
     this.map.push(fenceW6);
     ++this.map_size;
 
-    var fenceN7 = new Physijs.BoxMesh (new THREE.BoxGeometry (220, 4, 8, 1, 1, 1), mat, 0);
-    fenceN7.applyMatrix (new THREE.Matrix4().makeTranslation (0, 2.5, -96));
+    var fenceN7 = new Physijs.BoxMesh (new THREE.BoxGeometry (620, 100, 8, 1, 1, 1), mat, 0);
+    fenceN7.applyMatrix (new THREE.Matrix4().makeTranslation (0, 2.5, -320));
     fenceN7.receiveShadow = true;
     fenceN7.autoUpdateMatrix = false;
     this.map.push(fenceN7);

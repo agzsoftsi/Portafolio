@@ -1,6 +1,6 @@
 // The flying object class
 /**
- * @author David Infante, Jose Ariza
+ * @author Carlos Garcia
  * 
  */
 

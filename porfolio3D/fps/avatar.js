@@ -1,6 +1,6 @@
 /// The Avatar class
 /**
- * @author David Infante, Jose Ariza
+ * @author Carlos Garcia
  * 
  */
 class Avatar {
@@ -19,7 +19,7 @@ class Avatar {
         this.activeWeapon = null;
         this.goingUp = true;
         this.recoil = true;
-        this.posLimite = 82;
+        this.posLimite = 302;
         this.shotgun = null;
         this.rifle = null;
 
