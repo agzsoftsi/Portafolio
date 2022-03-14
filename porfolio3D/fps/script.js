@@ -24,9 +24,7 @@ moveBackward = false;
 moveLeft = false;
 moveRight = false;
 jumping = false;
-disparando = false;
 enableControls = true; //habilita la entrada de datos por ratón y teclado
-
 
 /// It creates the GUI and, optionally, adds statistic information
 /**
@@ -71,12 +69,7 @@ function setMessage (str) {
  * @param event - Mouse information
  */
 function onMouseDown (event) {
-  if (enableControls) {
-    if(event.buttons == 1 && blocker.style.display == 'none') {
-      scene.dispara();
-      disparando = true;
-    }
-  }
+ // need code
 }
 
 /// It processes keyboard information
@@ -109,10 +102,6 @@ function onKeyDown (event) {
 
       case 32: // space
         jumping = true;
-        break;
-
-      case 81: // q
-        if (!disparando) scene.changeWeapon();
         break;
     }
   }
@@ -158,9 +147,7 @@ function onKeyUp (event) {
  * @param event - Mouse information
  */
 function onMouseWheel (event) {
-  if (enableControls) {
-    if (!disparando) scene.changeWeapon();
-  }
+  // need code
 }
 
 /// It processes the window size changes
@@ -198,7 +185,7 @@ function render() {
 $(function () {
   'use strict';
   Physijs.scripts.worker = '../libs/physijs_worker.js';
-  Physijs.scripts.ammo = '../libs/ammo.js';
+  //Physijs.scripts.ammo = '../libs/ammo.js';
 
 
   var instructions = document.getElementById( 'instructions' );

@@ -2,100 +2,26 @@
 /**
  * @author Carlos Garcia
  */
- 
 class TheScene extends Physijs.Scene {
   
   constructor (renderer, aCamera) {
 
     super();
     this.setGravity(new THREE.Vector3 (0, -50, 0));
-
     this.camera = aCamera;
     this.createCrosshair(renderer);
-
     this.avatar = null;
     this.map = null;
-    this.enemies = null;
     this.skybox = null;
-    this.Bullets = null;
     this.index = 0;
-    this.maxBullets = 10;
-    this.actualAmmo = 10; //Balas totales antes de acabar el juego
-    this.score = 0;
-    this.lastScore = 0;
-    this.level = 1;
-
-    this.createHUD();
-
     this.createAvatar();
-    // this.avatar.loadWeapons();
     this.place = this.createPlace();
-    // this.createBullets();
-    this.createEnemies(this.level);
-
-
     this.ambientLight = null;
     this.spotLight = null;
     this.createLights();
-
     this.add(this.place);
   }
   
-  createHUD() {
-    var score = document.createElement('div');
-    score.id = "score";
-    score.style.position = 'absolute';
-    score.style.width = 1;
-    score.style.height = 1;
-    // score.innerHTML = "Puntuación: " + this.score;
-    score.style.top = 50 + 'px';
-    score.style.left = 50 + 'px';
-    score.style.fontSize = 50 + 'px';
-    score.style.color = "white";
-    document.body.appendChild(score);
-
-    var ammo = document.createElement('div');
-    ammo.id = "ammo";
-    ammo.style.position = 'absolute';
-    ammo.style.width = 1;
-    ammo.style.height = 1;
-    // ammo.innerHTML = "Munición: " + this.actualAmmo;
-    ammo.style.top = 100 + 'px';
-    ammo.style.left = 50 + 'px';
-    ammo.style.fontSize = 50 + 'px';
-    ammo.style.color = "white";
-    document.body.appendChild(ammo);
-
-    var level = document.createElement('div');
-    level.id = "level";
-    level.style.position = 'absolute';
-    level.style.width = 1;
-    level.style.height = 1;
-    level.innerHTML = "Nivel: " + this.level;
-    level.style.top = 150 + 'px';
-    level.style.left = 50 + 'px';
-    level.style.fontSize = 50 + 'px';
-    level.style.color = "white";
-    level.style.display = "none";
-    document.body.appendChild(level);
-  }
-
-  updateAmmo() {
-    var text = document.getElementById("ammo");
-    text.innerHTML = "Munición: " + this.actualAmmo;
-  }
-
-  updateScore(newScore){
-    var text = document.getElementById("score");
-    this.score += newScore;
-    text.innerHTML = "Puntuacion: " + this.score;
-  }
-
-  updateLevel() {
-    var level = document.getElementById("level");
-    level.innerHTML = "Nivel: " + this.level;
-  }
-
   /// It creates the camera and adds it to the graph
   /**
    * @param renderer - The renderer associated with the camera
@@ -111,20 +37,6 @@ class TheScene extends Physijs.Scene {
     var crosshairPositionX = (crosshairPercentX / 100) * 2 - 1;
     var crosshairPositionY = (crosshairPercentY / 100) * 2 - 1;
     crosshair.position.set((crosshairPercentX / 100) * 2 - 1, (crosshairPercentY / 100) * 2 - 1, -0.3);
-  }
-
-  dispara() {
-    /*
-    if(this.index >= this.maxBullets) {
-      this.index = 0;
-      this.bullets.reload();
-    }
-    if (!disparando) {
-      this.bullets.dispara(this.index, this.avatar.getPosition(), this.camera.getWorldDirection(), this.avatar.getActiveWeapon());
-      this.index++;
-      this.actualAmmo--;
-      this.updateAmmo();
-    } */
   }
   
   /// It creates lights and adds them to the graph
@@ -171,42 +83,6 @@ class TheScene extends Physijs.Scene {
     this.avatar = new Avatar(this.camera, this);
   }
 
-  /// It creates the bullets
-  /**
-   *
-   */
-  createBullets() {
-    var loader = new THREE.TextureLoader();
-    var textura = loader.load ("imgs/bullettext.jpg");
-    this.bullets = new Bullets(this.maxBullets, this, (new THREE.MeshPhongMaterial ({map: textura})));
-  }
-
-  /// It creates the enemies
-  /**
-   *
-   */
-  createEnemies() {
-    this.enemies = new Enemies(this, this.level);
-  }
-
-  endGame() {
-    enableControls = false;
-    controls.enabled = false;
-    
-    moveForward = false;
-    moveBackward = false;
-    moveLeft = false;
-    moveRight = false;
-    jumping = false;
-
-    blocker.style.display = 'block';
-    instructions.style.display = '';
-    instructions.style.fontSize = "50px";
-
-    instructions.innerHTML = `Puntuación total: ${this.score}, pulsa la tecla P para jugar otra partida.`;
-  }
-  
-  /// 
   /**
    * @controls - The GUI information
    */
@@ -222,21 +98,7 @@ class TheScene extends Physijs.Scene {
       this.avatar.jump();
     }
 
-    if (disparando) {
-      this.avatar.animateWeapon();
-    }
-
     this.avatar.updateControls();
-
-    this.enemies.animate();
-
-    /*if (this.actualAmmo == 0) {
-      this.endGame();
-    }*/
-  }
-
-  changeWeapon() {
-    this.avatar.changeWeapon();
   }
 
   /// It returns the camera
@@ -263,39 +125,5 @@ class TheScene extends Physijs.Scene {
     this.camera.aspect = anAspectRatio;
     this.camera.updateProjectionMatrix();
   }
-  
-  newLevel() {
-    this.avatar.setInitialPosition();
-
-    if(this.score - this.lastScore != 40)
-      this.score = this.lastScore + 40;
-
-    this.updateLevel();
-
-    for (var i = 0; i < this.enemies.getEnemiesSize(); ++i) {
-      this.remove(this.enemies.getEnemies(i));
-    }
-    this.createEnemies();
-    this.lastScore = this.score;
-  }
-
-  newGame() {
-    blocker.style.display = 'none';
-    enableControls = true;
-    controls.enabled = true;
-    this.avatar.setInitialPosition();
-    // this.actualAmmo = 40;
-    this.updateAmmo();
-    this.score = 0;
-    this.updateScore(0);
-    this.level = 1;
-    this.updateLevel();
-
-    for (var i = 0; i < this.enemies.getEnemiesSize(); ++i) {
-      this.remove(this.enemies.getEnemies(i));
-    }
-    this.createEnemies();
-  }
-
 }
 
