@@ -54,6 +54,17 @@ class TheScene extends Physijs.Scene {
     this.spotLight.shadow.mapSize.width=2048;
     this.spotLight.shadow.mapSize.height=2048;
     this.add (this.spotLight);
+
+    this.spotLight2 = new THREE.PointLight( 0x00ff00, 1, 30);
+    this.spotLight2.position.set(0, 75, 290);
+    // the shadow resolution
+    this.add (this.spotLight2);
+
+    this.rectLight1 = new THREE.RectAreaLight( 0x00ff00, 1, 50, 50);
+    this.rectLight1.position.set(50, 10, 200);
+    this.rectLight1.lookAt( 100, 75, 290 );
+    // the shadow resolution
+    this.add (this.rectLight1);
   }
   
   /// It creates the place
