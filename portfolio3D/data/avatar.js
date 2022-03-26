@@ -11,7 +11,8 @@ class Avatar {
         this.avatar = new THREE.Mesh (new THREE.BoxGeometry (5, 5, 5), mat);
         this.avatar.material.transparent = true;
         this.avatar.material.opacity = 0.0;
-        this.avatar.position.y = 20;
+        this.avatar.position.y = 40;
+        this.avatar.position.z = 200;
         this.avatar.__dirtyPosition = true;
         scene.add(this.avatar);
         this.camera = camera;
@@ -36,15 +37,15 @@ class Avatar {
     }
 
     setInitialPosition() {
-        this.avatar.position.set(0, 20, 0);
+        this.avatar.position.set(0, 40, 0);
     }
 
     jump() {
         if (this.goingUp) {
-            if (this.avatar.position.y > 50) this.goingUp = false;
+            if (this.avatar.position.y > 60) this.goingUp = false;
             else this.avatar.position.y += 0.9;
         } else {
-            if (this.avatar.position.y >= 19.5 && this.avatar.position.y <= 20) {
+            if (this.avatar.position.y >= 39.5 && this.avatar.position.y <= 40) {
                 jumping = false;
                 this.goingUp = true;
             } else this.avatar.position.y -= 0.9;
