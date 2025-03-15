@@ -1,29 +1,8 @@
 body {
   margin: 0;
   overflow: hidden;
+  background: #000;
 }
-
 canvas {
-  background-color: #e0e0e0;
-  border: 1px solid #000;
   display: block;
-  position: absolute;
-}
-
-#infoPanel {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background: white;
-  border: 1px solid #000;
-  padding: 20px;
-  z-index: 10;
-}
-
-.hidden {
-  display: none;
-}
-
-.section {
-  margin: 10px 0;
 }
