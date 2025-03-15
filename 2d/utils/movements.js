@@ -52,14 +52,21 @@ const character = {
     walk: 6,
     jump: 1,
   },
+  facingRight: true, // Dirección del personaje
 };
 
 // Controles de movimiento
 const keys = { ArrowRight: false, ArrowLeft: false };
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "ArrowRight") keys.ArrowRight = true;
-  if (event.key === "ArrowLeft") keys.ArrowLeft = true;
+  if (event.key === "ArrowRight") {
+    keys.ArrowRight = true;
+    character.facingRight = true;
+  }
+  if (event.key === "ArrowLeft") {
+    keys.ArrowLeft = true;
+    character.facingRight = false;
+  }
   if (event.key === " " && !character.isJumping) {
     character.velocityY = -character.jumpStrength;
     character.isJumping = true;
@@ -77,17 +84,34 @@ function drawCharacter() {
   const frameWidth = sprite.width / character.frameCount[character.state];
   const frameHeight = sprite.height;
 
-  ctx.drawImage(
-    sprite,
-    frameWidth * Math.floor(character.frameIndex), // Frame actual
-    0,
-    frameWidth,
-    frameHeight,
-    character.x,
-    character.y,
-    character.size,
-    character.size
-  );
+  ctx.save();
+  if (!character.facingRight) {
+    ctx.scale(-1, 1);
+    ctx.drawImage(
+      sprite,
+      frameWidth * Math.floor(character.frameIndex),
+      0,
+      frameWidth,
+      frameHeight,
+      -character.x - character.size,
+      character.y,
+      character.size,
+      character.size
+    );
+  } else {
+    ctx.drawImage(
+      sprite,
+      frameWidth * Math.floor(character.frameIndex),
+      0,
+      frameWidth,
+      frameHeight,
+      character.x,
+      character.y,
+      character.size,
+      character.size
+    );
+  }
+  ctx.restore();
 
   // Control de animación
   character.frameIndex += character.frameSpeed;
@@ -132,7 +156,7 @@ function update() {
 
   character.x += character.velocityX;
 
-  // Control de la cámara
+  // Mover la cámara dentro de los límites del mundo
   const centerScreen = canvas.width * 0.4;
   if (character.x > centerScreen && keys.ArrowRight) {
     cameraX += character.speed;
