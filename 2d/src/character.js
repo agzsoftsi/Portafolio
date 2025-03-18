@@ -13,7 +13,7 @@ spriteImages.jump.src = "./assets/sprites/jump.fw.png";
 export const character = {
   x: 100,
   y: canvas.height - 150,
-  size: Math.max(50, canvas.width * 0.05),
+  size: Math.max(50, canvas.width * 0.08),
   speed: 5,
   gravity: 1,
   velocityX: 0,

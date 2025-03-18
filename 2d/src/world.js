@@ -1,7 +1,7 @@
 import { ctx, canvas } from "./canvas.js";
 
 export const sections = [
-  { name: "Start", x: 0, color: "#87CEEB" },
+  { name: "Start", x: 0, color: "#FFFFFF" },
   { name: "About Me", x: 800, color: "#FFA07A" },
   { name: "Skills", x: 1600, color: "#FFD700" },
   { name: "Experience", x: 2400, color: "#98FB98" },
@@ -17,8 +17,13 @@ export function drawWorld(cameraX) {
   sections.forEach((section) => {
     ctx.fillStyle = section.color;
     ctx.fillRect(section.x - cameraX, 0, 800, canvas.height);
+    ctx.fillRect(section.x - cameraX, 0, 800, 150);
     ctx.fillStyle = "#000";
-    ctx.font = "30px Arial";
+    ctx.font = "40px Arial";
+    ctx.shadowColor = "rgba(0,0,0,0.5)"; // Color de la sombra
+    ctx.shadowBlur = 5; // Nivel de desenfoque
+    ctx.shadowOffsetX = 2; // Desplazamiento en X
+    ctx.shadowOffsetY = 2;
     ctx.fillText(section.name, section.x - cameraX + 350, 100);
   });
 
