@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fafafa;
+}
+
+.section {
+  padding: 4rem 2rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}

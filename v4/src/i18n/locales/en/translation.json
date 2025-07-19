@@ -1,0 +1,11 @@
+{
+  "header": {
+    "title": "<Hello World/>",
+    "subtitle": "I'm Carlos Garcia",
+    "role": "FullStack Software developer"
+  },
+  "about": {
+    "title": "About Me",
+    "text": "I'm a frontend developer passionate about React, technology, and visual creativity."
+  }
+}

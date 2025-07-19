@@ -1,0 +1,10 @@
+{
+  "header": {
+    "title": "Hello, I'm Karl Garmor",
+    "subtitle": "Frontend Developer • React Lover"
+  },
+  "about": {
+    "title": "About Me",
+    "text": "I'm a frontend developer passionate about React, technology, and visual creativity."
+  }
+}
