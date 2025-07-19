@@ -19,7 +19,14 @@ export default function View2DPage() {
   const subtitleColor = darkMode ? "gray.400" : "gray.600";
 
   return (
-    <Box minH="100vh" bg={bgColor} color={textColor} transition="all 0.3s ease">
+    <Box
+      minH="100vh"
+      bg={bgColor}
+      color={textColor}
+      transition="all 0.3s ease"
+      paddingTop="100px"
+      fontFamily="Raleway"
+    >
       <Box as="header" p={8} textAlign="center">
         <Heading as="h1" size="2xl" fontWeight="bold">
           {t("header.title")}
