@@ -5,30 +5,28 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 
 const MotionSection = motion(Box);
 
-export default function Education() {
+export default function Home() {
   const { t } = useTranslation();
 
   return (
     <MotionSection
       as="section"
-      id="education"
+      id="Home"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
       scrollMarginTop="80px"
     >
-      <Box py="150px">
-        <Heading as="h2" size="xl" fontWeight="semibold" mb={2}>
-          🎓 {t("education.title")}
+      <Box as="header" px={8} py="150px" textAlign="center">
+        <Heading as="h1" size="2xl" fontWeight="bold">
+          {t("header.title")}
         </Heading>
-        <Text
-          color={{
-            base: "gray.600",
-            _dark: "gray.300",
-          }}
-        >
-          {t("education.description")}
+        <Text mt={2} fontSize="lg">
+          {t("header.subtitle")}
+        </Text>
+        <Text mt={2} fontSize="lg">
+          {t("header.role")}
         </Text>
       </Box>
     </MotionSection>

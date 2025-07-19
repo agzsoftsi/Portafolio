@@ -8,6 +8,7 @@ import Jobs from "./Sections/Jobs.section";
 import Education from "./Sections/Education.section";
 import Contact from "./Sections/Contact.section";
 import useGlobalStore from "../../store/useGlobalStore";
+import SectionContainer from "./Sections/SectionsContainer";
 
 export default function View2DPage() {
   const { t } = useTranslation();
@@ -16,7 +17,6 @@ export default function View2DPage() {
   // Colores dinámicos según modo claro/oscuro
   const bgColor = darkMode ? "gray.900" : "gray.50";
   const textColor = darkMode ? "gray.100" : "gray.900";
-  const subtitleColor = darkMode ? "gray.400" : "gray.600";
 
   return (
     <Box
@@ -27,26 +27,9 @@ export default function View2DPage() {
       paddingTop="100px"
       fontFamily="Raleway"
     >
-      <Box as="header" p={8} textAlign="center">
-        <Heading as="h1" size="2xl" fontWeight="bold">
-          {t("header.title")}
-        </Heading>
-        <Text mt={2} fontSize="lg" color={subtitleColor}>
-          {t("header.subtitle")}
-        </Text>
-        <Text mt={2} fontSize="lg" color={subtitleColor}>
-          {t("header.role")}
-        </Text>
-      </Box>
-
       <Box as="main" px={6} maxW="3xl" mx="auto">
         <VStack align="stretch">
-          <About />
-          <Skills />
-          <Projects />
-          <Jobs />
-          <Education />
-          <Contact />
+          <SectionContainer />
         </VStack>
       </Box>
     </Box>

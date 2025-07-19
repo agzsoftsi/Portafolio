@@ -19,17 +19,19 @@ export default function Skills() {
       transition={{ duration: 0.5 }}
       scrollMarginTop="80px"
     >
-      <Heading as="h2" size="xl" fontWeight="semibold" mb={2}>
-        👤 {t("skills.title")}
-      </Heading>
-      <Text
-        color={{
-          base: "gray.600",
-          _dark: "gray.300",
-        }}
-      >
-        {t("skills.description")}
-      </Text>
+      <Box py="150px">
+        <Heading as="h2" size="xl" fontWeight="semibold" mb={2}>
+          👤 {t("skills.title")}
+        </Heading>
+        <Text
+          color={{
+            base: "gray.600",
+            _dark: "gray.300",
+          }}
+        >
+          {t("skills.description")}
+        </Text>
+      </Box>
     </MotionSection>
   );
 }
