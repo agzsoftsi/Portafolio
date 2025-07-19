@@ -1,15 +1,25 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
+import { Box, Button, Text, VStack, Icon, Image } from "@chakra-ui/react";
+import { SlArrowDown } from "react-icons/sl";
+
+import ar from "../../assets/icons/ar.jpg";
+import es from "../../assets/icons/es.jpg";
+import en from "../../assets/icons/en.jpg";
+import it from "../../assets/icons/it.jpg";
+import fr from "../../assets/icons/fr.jpg";
+import pt from "../../assets/icons/pt.jpg";
+import cn from "../../assets/icons/cn.jpg";
 
 const LANGUAGES = [
-  { code: "es", label: "Español", emoji: "🇪🇸" },
-  { code: "en", label: "English", emoji: "🇺🇸" },
-  { code: "fr", label: "Français", emoji: "🇫🇷" },
-  { code: "zh", label: "中文", emoji: "🇨🇳" },
-  { code: "pt", label: "Português", emoji: "🇧🇷" },
-  { code: "it", label: "Italiano", emoji: "🇮🇹" },
-  { code: "ar", label: "العربية", emoji: "🇸🇦" },
+  { code: "es", label: "Español", emoji: "🇪🇸", icon: es },
+  { code: "en", label: "English", emoji: "🇺🇸", icon: en },
+  { code: "fr", label: "Français", emoji: "🇫🇷", icon: fr },
+  { code: "zh", label: "中文", emoji: "🇨🇳", icon: cn },
+  { code: "pt", label: "Português", emoji: "🇧🇷", icon: pt },
+  { code: "it", label: "Italiano", emoji: "🇮🇹", icon: it },
+  { code: "ar", label: "العربية", emoji: "🇸🇦", icon: ar },
 ];
 
 export default function LanguageSwitcher() {
@@ -23,59 +33,104 @@ export default function LanguageSwitcher() {
     i18n.changeLanguage(langCode);
     setOpen(false);
   };
+  console.log(currentLang);
 
   return (
-    <div className="relative inline-block text-left z-50">
-      <button
+    <Box position="relative" display="inline-block" zIndex={50}>
+      <Button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-2 px-3 py-1.5 bg-white dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 rounded-lg shadow-sm hover:bg-zinc-100 dark:hover:bg-zinc-700 transition"
+        variant="outline"
+        size="sm"
+        px={2}
+        py={1.5}
+        bg="white"
+        _dark={{ bg: "gray.800" }}
+        borderColor="gray.300"
+        //_dark={{ borderColor: "gray.600" }}
+        _hover={{
+          bg: "gray.50",
+          _dark: { bg: "gray.700" },
+        }}
+        display="flex"
+        alignItems="center"
+        gap={2}
+        borderRadius="50px"
+        h="27px"
       >
-        <span>{currentLang.emoji}</span>
-        <span className="hidden sm:inline text-sm font-medium capitalize">
-          {currentLang.label}
-        </span>
-        <svg
-          className={`w-3 h-3 ml-1 transform transition-transform ${
-            open ? "rotate-180" : ""
-          }`}
-          fill="none"
-          stroke="currentColor"
-          strokeWidth={2}
-          viewBox="0 0 24 24"
+        <Text as="span">
+          <Image src={currentLang.icon} h="15px" w="15px" />
+        </Text>
+        <Text
+          as="span"
+          fontSize="sm"
+          fontWeight="medium"
+          display={{ base: "none", sm: "inline" }}
+          textTransform="capitalize"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19 9l-7 7-7-7"
-          />
-        </svg>
-      </button>
+          {currentLang.emoji}
+        </Text>
+        <Box
+          ml={1}
+          transform={open ? "rotate(180deg)" : "rotate(0deg)"}
+          transition="transform 0.2s"
+          fill="none"
+        >
+          <Icon as={SlArrowDown} h={3} />
+        </Box>
+      </Button>
 
       <AnimatePresence>
         {open && (
-          <motion.ul
+          <motion.div
             initial={{ opacity: 0, y: -5 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -5 }}
             transition={{ duration: 0.2 }}
-            className="absolute right-0 mt-2 w-44 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-lg shadow-md overflow-hidden"
           >
-            {LANGUAGES.map((lang) => (
-              <li key={lang.code}>
-                <button
+            <VStack
+              position="absolute"
+              right={0}
+              mt={2}
+              w="130px"
+              bg="white"
+              _dark={{ bg: "gray.800" }}
+              border="1px"
+              borderColor="gray.200"
+              //_dark={{ borderColor: "gray.600" }}
+              borderRadius="lg"
+              boxShadow="md"
+              overflow="hidden"
+              //spacing={0}
+            >
+              {LANGUAGES.map((lang) => (
+                <Button
+                  key={lang.code}
                   onClick={() => handleSelect(lang.code)}
-                  className={`flex items-center w-full px-4 py-2 text-sm text-zinc-800 dark:text-white hover:bg-zinc-100 dark:hover:bg-zinc-700 transition ${
-                    i18n.language === lang.code ? "font-semibold" : ""
-                  }`}
+                  variant="ghost"
+                  size="sm"
+                  w="100px"
+                  justifyContent="flex-start"
+                  borderRadius={0}
+                  bg="transparent"
+                  color="gray.800"
+                  _dark={{ color: "white" }}
+                  _hover={{
+                    bg: "gray.100",
+                    _dark: { bg: "gray.700" },
+                  }}
+                  fontWeight={
+                    i18n.language === lang.code ? "semibold" : "normal"
+                  }
+                  fontSize="sm"
                 >
-                  <span className="mr-2">{lang.emoji}</span>
-                  <span>{lang.label}</span>
-                </button>
-              </li>
-            ))}
-          </motion.ul>
+                  <Image src={lang.icon} h="20px" w="20px" />
+                  <Text as="span">{lang.label}</Text>
+                </Button>
+              ))}
+            </VStack>
+          </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </Box>
   );
 }
