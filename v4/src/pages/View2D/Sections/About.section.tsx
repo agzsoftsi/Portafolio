@@ -19,7 +19,7 @@ export default function About() {
       scrollMarginTop="80px"
     >
       <Heading as="h2" size="xl" fontWeight="semibold" mb={2}>
-        {t("about.title", "Sobre Mí")}
+        {t("about.title")}
       </Heading>
       <Text
         color={{
@@ -27,10 +27,7 @@ export default function About() {
           _dark: "gray.300",
         }}
       >
-        {t(
-          "about.text",
-          "Soy un desarrollador con pasión por la tecnología, la innovación y el aprendizaje constante."
-        )}
+        {t("about.description")}
       </Text>
     </MotionSection>
   );

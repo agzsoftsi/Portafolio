@@ -12,7 +12,7 @@ export default function Skills() {
   return (
     <MotionSection
       as="section"
-      id="about"
+      id="skill"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -20,7 +20,7 @@ export default function Skills() {
       scrollMarginTop="80px"
     >
       <Heading as="h2" size="xl" fontWeight="semibold" mb={2}>
-        👤 {t("skills.title", "About Me")}
+        👤 {t("skills.title")}
       </Heading>
       <Text
         color={{
@@ -28,10 +28,7 @@ export default function Skills() {
           _dark: "gray.300",
         }}
       >
-        {t(
-          "skills.description",
-          "Soy un desarrollador frontend apasionado por React, la tecnología y la creatividad visual."
-        )}
+        {t("skills.description")}
       </Text>
     </MotionSection>
   );

@@ -19,7 +19,7 @@ export default function Contact() {
       scrollMarginTop="80px"
     >
       <Heading as="h2" size="xl" fontWeight="semibold" mb={2}>
-        📢 {t("contact.title", "Let's talk")}
+        📢 {t("contact.title")}
       </Heading>
       <Text
         color={{
@@ -27,10 +27,7 @@ export default function Contact() {
           _dark: "gray.300",
         }}
       >
-        {t(
-          "contact.description",
-          "Estoy disponible para colaborar en proyectos, responder preguntas o simplemente conectar. ¡Hablemos!"
-        )}
+        {t("contact.description")}
       </Text>
     </MotionSection>
   );

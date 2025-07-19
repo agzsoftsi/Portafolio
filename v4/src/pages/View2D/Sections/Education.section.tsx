@@ -19,7 +19,7 @@ export default function Education() {
       scrollMarginTop="80px"
     >
       <Heading as="h2" size="xl" fontWeight="semibold" mb={2}>
-        🎓 {t("education.title", "Educación")}
+        🎓 {t("education.title")}
       </Heading>
       <Text
         color={{
@@ -27,10 +27,7 @@ export default function Education() {
           _dark: "gray.300",
         }}
       >
-        {t(
-          "education.description",
-          "Mi formación académica me ha brindado las bases sólidas necesarias para desarrollarme como profesional en el ámbito tecnológico."
-        )}
+        {t("education.description")}
       </Text>
     </MotionSection>
   );

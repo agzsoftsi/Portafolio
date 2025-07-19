@@ -19,7 +19,7 @@ export default function Jobs() {
       scrollMarginTop="80px"
     >
       <Heading as="h2" size="xl" fontWeight="semibold" mb={2}>
-        💼 {t("jobs.title", "Experiencia Laboral")}
+        💼 {t("jobs.title")}
       </Heading>
       <Text
         color={{
@@ -27,10 +27,7 @@ export default function Jobs() {
           _dark: "gray.300",
         }}
       >
-        {t(
-          "jobs.description",
-          "He trabajado en diversos proyectos donde he aplicado buenas prácticas de desarrollo frontend, colaborando con equipos multidisciplinarios."
-        )}
+        {t("jobs.description")}
       </Text>
     </MotionSection>
   );

@@ -20,7 +20,7 @@ export default function Projects() {
       scrollMarginTop="80px"
     >
       <Heading as="h2" size="xl" fontWeight="semibold" mb={2}>
-        🧩 {t("projects.title", "Projects")}
+        🧩 {t("projects.title")}
       </Heading>
       <Text
         color={{
@@ -28,10 +28,7 @@ export default function Projects() {
           _dark: "gray.300",
         }}
       >
-        {t(
-          "projects.description",
-          "Estos son algunos proyectos donde he aplicado mis conocimientos en React y desarrollo frontend con un enfoque creativo."
-        )}
+        {t("projects.description")}
       </Text>
     </MotionSection>
   );
