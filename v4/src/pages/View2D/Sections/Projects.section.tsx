@@ -19,8 +19,15 @@ export default function Projects() {
       transition={{ duration: 0.5 }}
       scrollMarginTop="80px"
     >
-      <Box py="150px">
-        <Heading as="h2" size="xl" fontWeight="semibold" mb={2}>
+      <Box py="150px" bg="#B9BEC4" height="100vh" px="30px">
+        <Heading
+          as="h2"
+          fontSize="36px"
+          fontFamily="Raleway"
+          color="black"
+          fontWeight="semibold"
+          mb={2}
+        >
           🧩 {t("projects.title")}
         </Heading>
         <Text

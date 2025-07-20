@@ -18,8 +18,21 @@ export default function Home() {
       transition={{ duration: 0.5 }}
       scrollMarginTop="80px"
     >
-      <Box as="header" px={8} py="150px" textAlign="center">
-        <Heading as="h1" size="2xl" fontWeight="bold">
+      <Box
+        as="header"
+        py="150px"
+        textAlign="center"
+        bg="#D3DBE0"
+        height="100vh"
+        px="30px"
+      >
+        <Heading
+          as="h1"
+          fontSize="45px"
+          fontFamily="Raleway"
+          fontWeight="bold"
+          color="#00b7ff"
+        >
           {t("header.title")}
         </Heading>
         <Text mt={2} fontSize="lg">

@@ -6,6 +6,12 @@ import Jobs from "./Jobs.section";
 import Education from "./Education.section";
 import Contact from "./Contact.section";
 import Home from "./home.section";
+import { TbUserHexagon } from "react-icons/tb";
+import { IoHomeOutline, IoCodeSlash } from "react-icons/io5";
+import { MdOutlineRocketLaunch, MdOutlineWorkOutline } from "react-icons/md";
+import { PiCertificate } from "react-icons/pi";
+import { LuMailPlus } from "react-icons/lu";
+import { Icon, Image } from "@chakra-ui/react";
 
 const sections = [
   <Home />,
@@ -15,6 +21,16 @@ const sections = [
   <Jobs />,
   <Education />,
   <Contact />,
+];
+
+const sectionIcons = [
+  IoHomeOutline,
+  TbUserHexagon,
+  MdOutlineRocketLaunch,
+  IoCodeSlash,
+  MdOutlineWorkOutline,
+  PiCertificate,
+  LuMailPlus,
 ];
 
 export default function SectionContainer() {
@@ -108,7 +124,14 @@ export default function SectionContainer() {
     };
   }, [current, navVisible]);
   return (
-    <div style={{ position: "relative", height: "100vh", overflow: "hidden" }}>
+    <div
+      style={{
+        position: "relative",
+        height: "100vh",
+        overflow: "hidden",
+        width: "100vw",
+      }}
+    >
       {/* NAVIGATION DOTS */}
       {navVisible && (
         <div
@@ -130,14 +153,20 @@ export default function SectionContainer() {
                 scrollToSection(i);
               }}
               style={{
-                width: "12px",
-                height: "12px",
-                borderRadius: "50%",
-                background: i === current ? "#555" : "#ccc",
+                width: "40px",
+                height: "40px",
+                borderRadius: "8px",
+                background: i === current ? "#3182ce" : "#e2e8f0",
                 border: "none",
                 cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
-            />
+            >
+              {" "}
+              <Icon as={sectionIcons[i]} h="15px" w="15px" />
+            </button>
           ))}
         </div>
       )}

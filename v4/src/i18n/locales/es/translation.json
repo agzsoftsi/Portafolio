@@ -1,10 +1,31 @@
 {
   "header": {
-    "title": "Hello, I'm Karl Garmor",
-    "subtitle": "Frontend Developer • React Lover"
+    "title": "<Hello World/>",
+    "subtitle": "I'm KarlGarMor",
+    "role": "FullStack Software developer"
   },
   "about": {
     "title": "About Me",
-    "text": "I'm a frontend developer passionate about React, technology, and visual creativity."
+    "description": "I'm a frontend developer passionate about React, technology, and visual creativity."
+  },
+  "skills": {
+    "title": "Skills",
+    "description": "I'm a frontend developer passionate about React, technology, and visual creativity."
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "I'm a frontend developer passionate about React, technology, and visual creativity."
+  },
+  "jobs": {
+    "title": "Jobs",
+    "description": "I'm a frontend developer passionate about React, technology, and visual creativity."
+  },
+  "education": {
+    "title": "Education",
+    "description": "I'm a frontend developer passionate about React, technology, and visual creativity."
+  },
+  "contact": {
+    "title": "Let's Talk",
+    "description": "I'm a frontend developer passionate about React, technology, and visual creativity."
   }
 }
