@@ -19,7 +19,7 @@ export default function Skills() {
       transition={{ duration: 0.5 }}
       scrollMarginTop="80px"
     >
-      <Box py="150px" bg="#D3DBE0" height="100vh" px="30px">
+      <Box py="150px" bg="#E6E6E6" height="100vh" px="30px">
         <Heading
           as="h2"
           fontSize="36px"

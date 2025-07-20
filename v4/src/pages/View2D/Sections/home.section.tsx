@@ -22,7 +22,7 @@ export default function Home() {
         as="header"
         py="150px"
         textAlign="center"
-        bg="#D3DBE0"
+        bg="#E6E6E6"
         height="100vh"
         px="30px"
       >
@@ -31,7 +31,7 @@ export default function Home() {
           fontSize="45px"
           fontFamily="Raleway"
           fontWeight="bold"
-          color="#00b7ff"
+          color="#0000EE"
         >
           {t("header.title")}
         </Heading>

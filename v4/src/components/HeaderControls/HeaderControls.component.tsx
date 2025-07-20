@@ -5,7 +5,7 @@ import VistaToggle from "../../components/VistaToggle/VistaToggle.component";
 import LanguageSwitcher from "../../components/LanguageSwitcher/LanguageSwitcher.component";
 import Logo from "../../assets/icons/logo.png";
 
-export default function HeaderControls() {
+export default React.memo(function HeaderControls() {
   return (
     <Box
       position="fixed"
@@ -16,7 +16,7 @@ export default function HeaderControls() {
       display="flex"
     >
       <HStack padding={5} align="center">
-        <Image src={Logo} h={50} />
+        <Image src={Logo} h={50} w={50} alt="logo" />
       </HStack>
       <HStack padding={5} align="center">
         <DarkModeToggle />
@@ -25,4 +25,4 @@ export default function HeaderControls() {
       </HStack>
     </Box>
   );
-}
+});

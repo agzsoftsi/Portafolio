@@ -1,10 +1,11 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import View2DPage from "./pages/View2D/View2D.page";
-import View3DPage from "./pages/View3D/View3D.page";
-
-import Loader from "./components/Loader/Loader.component";
-import HeaderControls from "./components/HeaderControls/HeaderControls.component";
+const View2DPage = React.lazy(() => import("./pages/View2D/View2D.page"));
+const View3DPage = React.lazy(() => import("./pages/View3D/View3D.page"));
+const Loader = React.lazy(() => import("./components/Loader/Loader.component"));
+const HeaderControls = React.lazy(
+  () => import("./components/HeaderControls/HeaderControls.component")
+);
 
 export default function App() {
   return (
@@ -16,10 +17,12 @@ export default function App() {
       <HeaderControls />
 
       {/* Rutas principales */}
-      <Routes>
-        <Route path="/" element={<View2DPage />} />
-        <Route path="/3d" element={<View3DPage />} />
-      </Routes>
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route path="/" element={<View2DPage />} />
+          <Route path="/3d" element={<View3DPage />} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 }

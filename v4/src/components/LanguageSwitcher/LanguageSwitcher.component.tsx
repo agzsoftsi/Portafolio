@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { Box, Button, Text, VStack, Icon, Image } from "@chakra-ui/react";
@@ -26,14 +26,15 @@ export default function LanguageSwitcher() {
   const { i18n } = useTranslation();
   const [open, setOpen] = useState(false);
 
-  const currentLang =
-    LANGUAGES.find((l) => l.code === i18n.language) || LANGUAGES[0];
+  const currentLang = useMemo(
+    () => LANGUAGES.find((l) => l.code === i18n.language) || LANGUAGES[0],
+    [i18n.language]
+  );
 
   const handleSelect = (langCode: string) => {
     i18n.changeLanguage(langCode);
     setOpen(false);
   };
-  console.log(currentLang);
 
   return (
     <Box position="relative" display="inline-block" zIndex={50}>
@@ -58,7 +59,7 @@ export default function LanguageSwitcher() {
         h="27px"
       >
         <Text as="span">
-          <Image src={currentLang.icon} h="15px" w="15px" />
+          <Image src={currentLang.icon} h="15px" w="15px" alt="lang" />
         </Text>
         <Text
           as="span"
@@ -123,7 +124,7 @@ export default function LanguageSwitcher() {
                   }
                   fontSize="sm"
                 >
-                  <Image src={lang.icon} h="20px" w="20px" />
+                  <Image src={lang.icon} h="20px" w="20px" alt="lang" />
                   <Text as="span">{lang.label}</Text>
                 </Button>
               ))}

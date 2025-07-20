@@ -1,36 +1,42 @@
-import React, { useEffect, useRef, useState } from "react";
-import About from "./About.section";
-import Skills from "./Skills.section";
-import Projects from "./Projects.section";
-import Jobs from "./Jobs.section";
-import Education from "./Education.section";
-import Contact from "./Contact.section";
-import Home from "./home.section";
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable react/jsx-key */
+import React, { useEffect, useRef, useState, Suspense, useMemo } from "react";
+const Home = React.lazy(() => import("./home.section"));
+const About = React.lazy(() => import("./About.section"));
+const Skills = React.lazy(() => import("./Skills.section"));
+const Projects = React.lazy(() => import("./Projects.section"));
+const Jobs = React.lazy(() => import("./Jobs.section"));
+const Education = React.lazy(() => import("./Education.section"));
+const Contact = React.lazy(() => import("./Contact.section"));
 import { TbUserHexagon } from "react-icons/tb";
 import { IoHomeOutline, IoCodeSlash } from "react-icons/io5";
 import { MdOutlineRocketLaunch, MdOutlineWorkOutline } from "react-icons/md";
 import { PiCertificate } from "react-icons/pi";
 import { LuMailPlus } from "react-icons/lu";
-import { Icon, Image } from "@chakra-ui/react";
+import { Icon } from "@chakra-ui/react";
 
 const sections = [
-  <Home />,
-  <About />,
-  <Skills />,
-  <Projects />,
-  <Jobs />,
-  <Education />,
-  <Contact />,
-];
-
-const sectionIcons = [
-  IoHomeOutline,
-  TbUserHexagon,
-  MdOutlineRocketLaunch,
-  IoCodeSlash,
-  MdOutlineWorkOutline,
-  PiCertificate,
-  LuMailPlus,
+  <Suspense fallback={<div>Cargando...</div>}>
+    <Home />
+  </Suspense>,
+  <Suspense fallback={<div>Cargando...</div>}>
+    <About />
+  </Suspense>,
+  <Suspense fallback={<div>Cargando...</div>}>
+    <Skills />
+  </Suspense>,
+  <Suspense fallback={<div>Cargando...</div>}>
+    <Projects />
+  </Suspense>,
+  <Suspense fallback={<div>Cargando...</div>}>
+    <Jobs />
+  </Suspense>,
+  <Suspense fallback={<div>Cargando...</div>}>
+    <Education />
+  </Suspense>,
+  <Suspense fallback={<div>Cargando...</div>}>
+    <Contact />
+  </Suspense>,
 ];
 
 export default function SectionContainer() {
@@ -42,6 +48,19 @@ export default function SectionContainer() {
   // Touch control
   const touchStartY = useRef(0);
   const touchEndY = useRef(0);
+
+  const sectionIcons = useMemo(
+    () => [
+      IoHomeOutline,
+      TbUserHexagon,
+      MdOutlineRocketLaunch,
+      IoCodeSlash,
+      MdOutlineWorkOutline,
+      PiCertificate,
+      LuMailPlus,
+    ],
+    []
+  );
 
   const scrollToSection = (index: number) => {
     if (containerRef.current) {
@@ -163,6 +182,7 @@ export default function SectionContainer() {
                 alignItems: "center",
                 justifyContent: "center",
               }}
+              aria-label={sections[i]}
             >
               {" "}
               <Icon as={sectionIcons[i]} h="15px" w="15px" />
