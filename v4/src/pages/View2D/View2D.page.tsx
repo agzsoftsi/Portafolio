@@ -20,11 +20,7 @@ export default function View2DPage() {
       paddingTop="100px"
       fontFamily="Raleway"
     >
-      <Box as="main" px={6} maxW="3xl" mx="auto">
-        <VStack align="stretch">
-          <SectionContainer />
-        </VStack>
-      </Box>
+      <SectionContainer />
     </Box>
   );
 }

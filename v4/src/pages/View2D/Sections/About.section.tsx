@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Image, Text } from "@chakra-ui/react";
 
 const MotionSection = motion(Box);
 
@@ -29,14 +29,18 @@ export default function About() {
         >
           {t("about.title")}
         </Heading>
-        <Text
-          color={{
-            base: "gray.600",
-            _dark: "gray.300",
-          }}
-        >
-          {t("about.description")}
-        </Text>
+        <Box display="flex" flexDirection="row">
+          <Text
+            color={{
+              base: "gray.600",
+              _dark: "gray.300",
+            }}
+            marginTop="25px"
+          >
+            {t("about.description")}
+          </Text>
+          <Image src="" />
+        </Box>
       </Box>
     </MotionSection>
   );

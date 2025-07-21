@@ -1,5 +1,5 @@
 import React from "react";
-import { HStack, Box, Image } from "@chakra-ui/react";
+import { HStack, Box, Image, Link } from "@chakra-ui/react";
 import DarkModeToggle from "../../components/DarkModeToggle/DarkModeToggle.component";
 import VistaToggle from "../../components/VistaToggle/VistaToggle.component";
 import LanguageSwitcher from "../../components/LanguageSwitcher/LanguageSwitcher.component";
@@ -15,9 +15,9 @@ export default React.memo(function HeaderControls() {
       justifyContent="space-between"
       display="flex"
     >
-      <HStack padding={5} align="center">
+      <Link href="https://karlgarmor.tech/">
         <Image src={Logo} h={50} w={50} alt="logo" />
-      </HStack>
+      </Link>
       <HStack padding={5} align="center">
         <DarkModeToggle />
         <VistaToggle />

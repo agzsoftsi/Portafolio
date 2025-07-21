@@ -1,31 +1,31 @@
 {
   "header": {
-    "title": "<Hello World/>",
-    "subtitle": "I'm KarlGarMor",
+    "title": "<Hola Mundo />",
+    "subtitle": "Soy KarlGarMor",
     "role": "FullStack Software developer"
   },
   "about": {
-    "title": "About Me",
-    "description": "I'm a frontend developer passionate about React, technology, and visual creativity."
+    "title": "<Acerca de Mí />",
+    "description": "Ingeniero en Tecnología con más de 15 años de trayectoria multidisciplinaria en el sector TI, combinando roles como especialista en redes y servidores (7 años), desarrollador frontend (5 años), full stack (2 años) y game developer (1 año). Mi carrera ha evolucionado desde la infraestructura hasta el desarrollo de soluciones digitales, lo que me permite comprender el ciclo completo de vida de un producto tecnológico, desde la base técnica hasta la experiencia del usuario. Especializado en tecnologías como HTML, CSS, JavaScript, React, Node.js, MongoDB, SQL, Python, y con experiencia en servicios cloud (AWS, GCP), control de versiones con Git y herramientas de inteligencia artificial, integro innovación con visión estratégica. Me definen tanto mis habilidades técnicas como mi liderazgo colaborativo y humano: colegas y líderes destacan mi capacidad para traducir requerimientos complejos en soluciones funcionales, mi criterio para adoptar nuevas tecnologías sin caer en modas, y mi compromiso para formar equipos cohesionados que cumplen objetivos con excelencia. He contribuido en sectores como fintech, banca, marketing, entretenimiento y videojuegos, aportando soluciones estables, eficientes y alineadas al negocio. Como líder técnico, potencio el debate constructivo, impulso el crecimiento del equipo y me involucro activamente para que los proyectos avancen. Mi enfoque: combinar tecnología, experiencia de usuario y propósito."
   },
   "skills": {
-    "title": "Skills",
-    "description": "I'm a frontend developer passionate about React, technology, and visual creativity."
+    "description": "I'm a frontend developer passionate about React, technology, and visual creativity.",
+    "title": "<Habilidades />"
   },
   "projects": {
-    "title": "Projects",
-    "description": "I'm a frontend developer passionate about React, technology, and visual creativity."
+    "description": "I'm a frontend developer passionate about React, technology, and visual creativity.",
+    "title": "<Proyectos />"
   },
   "jobs": {
-    "title": "Jobs",
-    "description": "I'm a frontend developer passionate about React, technology, and visual creativity."
+    "description": "I'm a frontend developer passionate about React, technology, and visual creativity.",
+    "title": "<Experiencia Laboral/>"
   },
   "education": {
-    "title": "Education",
-    "description": "I'm a frontend developer passionate about React, technology, and visual creativity."
+    "description": "I'm a frontend developer passionate about React, technology, and visual creativity.",
+    "title": "<Formación Académica />"
   },
   "contact": {
-    "title": "Let's Talk",
-    "description": "I'm a frontend developer passionate about React, technology, and visual creativity."
+    "description": "I'm a frontend developer passionate about React, technology, and visual creativity.",
+    "title": "<Contacto />"
   }
 }
