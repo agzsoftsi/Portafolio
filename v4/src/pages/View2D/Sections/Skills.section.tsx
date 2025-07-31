@@ -2,12 +2,17 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Box, Heading, Text } from "@chakra-ui/react";
+import useGlobalStore from "../../../store/useGlobalStore";
 
 // Chakra Motion wrapper
 const MotionSection = motion(Box);
 
 export default function Skills() {
   const { t } = useTranslation();
+  const { darkMode } = useGlobalStore();
+  const bgColor = darkMode ? "#000000" : "##EEEEE";
+  const titleColor = darkMode ? "#66B1E8" : "#0000EE";
+  const textColor = darkMode ? "#F5EBEB" : "#000000";
 
   return (
     <MotionSection
@@ -19,25 +24,18 @@ export default function Skills() {
       transition={{ duration: 0.5 }}
       scrollMarginTop="80px"
     >
-      <Box py="150px" bg="#E6E6E6" height="100vh" px="30px">
+      <Box py="150px" bg={bgColor} height="100vh" px="30px">
         <Heading
           as="h2"
           fontSize="36px"
           fontFamily="Raleway"
-          color="black"
+          color={titleColor}
           fontWeight="semibold"
-          mb={2}
+          mb="40px"
         >
-          👤 {t("skills.title")}
+          {t("skills.title")}
         </Heading>
-        <Text
-          color={{
-            base: "gray.600",
-            _dark: "gray.300",
-          }}
-        >
-          {t("skills.description")}
-        </Text>
+        <Text color={textColor}>{t("skills.description")}</Text>
       </Box>
     </MotionSection>
   );

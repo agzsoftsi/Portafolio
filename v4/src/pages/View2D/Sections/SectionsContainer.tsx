@@ -176,15 +176,15 @@ export default function SectionContainer() {
                 height: "40px",
                 borderRadius: "8px",
                 background: i === current ? "#3182ce" : "#e2e8f0",
-                border: "none",
+                border: "1px solid #52525b",
                 cursor: "pointer",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                color: i === current ? "white" : "#52525b",
               }}
               aria-label={sections[i]}
             >
-              {" "}
               <Icon as={sectionIcons[i]} h="15px" w="15px" />
             </button>
           ))}

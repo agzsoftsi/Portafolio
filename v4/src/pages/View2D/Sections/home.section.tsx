@@ -2,11 +2,16 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Box, Heading, Text } from "@chakra-ui/react";
+import useGlobalStore from "../../../store/useGlobalStore";
 
 const MotionSection = motion(Box);
 
 export default function Home() {
   const { t } = useTranslation();
+  const { darkMode } = useGlobalStore();
+  const bgColor = darkMode ? "#000000" : "#EEEEE";
+  const titleColor = darkMode ? "#66B1E8" : "#0000EE";
+  const textColor = darkMode ? "#F5EBEB" : "#000000";
 
   return (
     <MotionSection
@@ -22,7 +27,7 @@ export default function Home() {
         as="header"
         py="150px"
         textAlign="center"
-        bg="#E6E6E6"
+        bg={bgColor}
         height="100vh"
         px="30px"
       >
@@ -31,16 +36,18 @@ export default function Home() {
           fontSize="45px"
           fontFamily="Raleway"
           fontWeight="bold"
-          color="#0000EE"
+          color={titleColor}
         >
           {t("header.title")}
         </Heading>
-        <Text mt={2} fontSize="lg">
-          {t("header.subtitle")}
-        </Text>
-        <Text mt={2} fontSize="lg">
-          {t("header.role")}
-        </Text>
+        <Box mt="25px">
+          <Text mt={2} fontSize="lg" color={textColor}>
+            {t("header.subtitle")}
+          </Text>
+          <Text mt={2} fontSize="lg" color={textColor}>
+            {t("header.role")}
+          </Text>
+        </Box>
       </Box>
     </MotionSection>
   );

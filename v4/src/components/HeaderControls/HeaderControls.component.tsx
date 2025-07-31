@@ -14,9 +14,10 @@ export default React.memo(function HeaderControls() {
       bgColor="rgba(255, 255, 255, 0.2)"
       justifyContent="space-between"
       display="flex"
+      boxShadow="0px 8px 8px -3px rgba(0,0,0,0.1);"
     >
       <Link href="https://karlgarmor.tech/">
-        <Image src={Logo} h={50} w={50} alt="logo" />
+        <Image src={Logo} h="60px" w="60px" alt="logo" marginLeft="25px" />
       </Link>
       <HStack padding={5} align="center">
         <DarkModeToggle />

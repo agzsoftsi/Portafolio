@@ -14,9 +14,12 @@ export default React.memo(function DarkModeToggle() {
       size="lg"
     >
       <Switch.HiddenInput />
-      <Switch.Control>
+      <Switch.Control
+        bg={darkMode ? "blue.500" : "blue.700"}
+        transition="background 0.3s"
+      >
         <Switch.Thumb />
-        <Switch.Indicator fallback={<Icon as={FaMoon} color="gray.400" />}>
+        <Switch.Indicator fallback={<Icon as={FaMoon} color="gray.200" />}>
           <Icon as={FaSun} color="yellow.400" />
         </Switch.Indicator>
       </Switch.Control>
