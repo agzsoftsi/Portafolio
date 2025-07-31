@@ -179,7 +179,7 @@ export default function SectionContainer() {
                   gap: "5px",
                   width: "100vw",
                   justifyContent: "center",
-                  background: "rgba(255,255,255,0.8)",
+                  background: "rgba(255,255,255,0.2)",
                   padding: "8px 0 4px 0",
                   boxShadow: "0px -2px 8px -3px rgba(0,0,0,0.1)",
                 }

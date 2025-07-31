@@ -26,7 +26,7 @@ export default function Education() {
       <Box py="150px" bg={bgColor} height="100vh" px="30px">
         <Heading
           as="h2"
-          fontSize="36px"
+          fontSize={{ base: "24px", md: "36px" }}
           fontFamily="Raleway"
           color={titleColor}
           fontWeight="semibold"
@@ -34,7 +34,9 @@ export default function Education() {
         >
           {t("education.title")}
         </Heading>
-        <Text color={textColor}>{t("education.description")}</Text>
+        <Text color={textColor} fontSize={{ base: "12px", md: "16px" }}>
+          {t("education.description")}
+        </Text>
       </Box>
     </MotionSection>
   );

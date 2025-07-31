@@ -27,7 +27,7 @@ export default function Skills() {
       <Box py="150px" bg={bgColor} height="100vh" px="30px">
         <Heading
           as="h2"
-          fontSize="36px"
+          fontSize={{ base: "24px", md: "36px" }}
           fontFamily="Raleway"
           color={titleColor}
           fontWeight="semibold"
@@ -35,7 +35,9 @@ export default function Skills() {
         >
           {t("skills.title")}
         </Heading>
-        <Text color={textColor}>{t("skills.description")}</Text>
+        <Text color={textColor} fontSize={{ base: "12px", md: "16px" }}>
+          {t("skills.description")}
+        </Text>
       </Box>
     </MotionSection>
   );

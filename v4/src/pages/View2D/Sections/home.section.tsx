@@ -33,7 +33,7 @@ export default function Home() {
       >
         <Heading
           as="h1"
-          fontSize="45px"
+          fontSize={{ base: "28px", md: "65px" }}
           fontFamily="Raleway"
           fontWeight="bold"
           color={titleColor}
@@ -41,10 +41,10 @@ export default function Home() {
           {t("header.title")}
         </Heading>
         <Box mt="25px">
-          <Text mt={2} fontSize="lg" color={textColor}>
+          <Text mt={2} fontSize={{ base: "md", md: "lg" }} color={textColor}>
             {t("header.subtitle")}
           </Text>
-          <Text mt={2} fontSize="lg" color={textColor}>
+          <Text mt={2} fontSize={{ base: "md", md: "lg" }} color={textColor}>
             {t("header.role")}
           </Text>
         </Box>
