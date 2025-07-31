@@ -163,6 +163,27 @@ export default function SectionContainer() {
             display: "flex",
             flexDirection: "column",
             gap: "10px",
+            // Responsive styles for mobile
+            left: undefined,
+            bottom: undefined,
+            width: undefined,
+            justifyContent: undefined,
+            ...(window.innerWidth < 768
+              ? {
+                  right: "50%",
+                  left: "50%",
+                  top: undefined,
+                  bottom: 0,
+                  transform: "translate(-50%, 0)",
+                  flexDirection: "row",
+                  gap: "5px",
+                  width: "100vw",
+                  justifyContent: "center",
+                  background: "rgba(255,255,255,0.8)",
+                  padding: "8px 0 4px 0",
+                  boxShadow: "0px -2px 8px -3px rgba(0,0,0,0.1)",
+                }
+              : {}),
           }}
         >
           {sections.map((_, i) => (
