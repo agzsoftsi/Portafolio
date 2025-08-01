@@ -12,7 +12,7 @@ interface GlobalState {
 }
 
 const useGlobalStore = create<GlobalState>((set) => ({
-  darkMode: false,
+  darkMode: true,
   view: "2d",
   isLoading: false,
   toggleDarkMode: () => set((state) => ({ darkMode: !state.darkMode })),
